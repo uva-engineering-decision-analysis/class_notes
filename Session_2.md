@@ -36,7 +36,7 @@ x \in X={0,1} corresponding to whether or not the petient has or does not have a
 
 Let present the same payoff in decision tree. We represent the decision problem imaginig you are going from lef to right, and as you go you are making choices.
 
-
+![1](pictures/pic_4.png/)
  
 
 
