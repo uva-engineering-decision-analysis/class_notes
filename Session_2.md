@@ -40,6 +40,16 @@ Here we reprresents our action or decision with the rectangular boxes. There are
 
 ![1](Picturs/pic_4.png)
  
+For each action in the decision tree, the amount of expected payoff was claculated showed in the above figure. The question is which one of the action should be choosen. As it was shown, the action "Y" will be choosen if the expected payoff action "Y" is bigger than action "N" and vice versa. In other word, based on the math, if $\theta$ is bigger that 0.6, the action "Y" will be choosen.
+
+
+Suppose there is a test in advance and the result of the test showes the exact value for the x. Here, the question is how much you will pay for the test. 
+
+
+
+
+
+
 
 To solve the decision tree means to identify the optimal action to take that maximizes the payoff. In this case, the decision maker is supposed to be risk neutral. If the decision maker is risk averse, the decision maker does not want to make mistake. Therefore, he always decides  not to give medicine to the petient to avoide patoff "-3". 
 
