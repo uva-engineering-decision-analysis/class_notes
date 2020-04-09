@@ -47,18 +47,37 @@ Example 1: A={give madication,don't}
 Example 2: A={fly the plane,don't}
 
  
-We have some kinds of predictive models which somehow are going to help us to improve or sharpen the probability distribution over $\theta$.  $(P^_{0}(\theta)=>P^_{1}(\theta))$
+We have some kinds of predictive models which somehow are going to help us to improve or sharpen the probability distribution over $\theta$.  $(P_{0}(\theta)=>P_{1}(\theta))$
  
- ![1](Picturs/README.md)
+ ![1](Picturs/pic_1.png)
  
-P0 is the decision maker beliefs about teta
-P1 it is the improved or sharpened the probability distribution over teta by using the predictive models
-There are some kinds of payoff functions or loss functions which are the function of the taken action and the state of the art.  Example: U(a, teta)
+$P_{0}$ is the decision maker beliefs about teta
+
+$P_{1}$ it is the improved or sharpened the probability distribution over \theta by using the predictive models
+
+There are some kinds of payoff functions or loss functions which are the function of the taken action and the state of the art.  
+
+Example: U(a, \theta)
+
 Example: Give a meditation (antibiotic) to the patient who may or may not have a particular disease (viral or bacterial). If the disease is the bacterial one, then giving the antibiotic will be helpful; otherwise not only does not it helpful but also it will reduce his resistance to antibiotic (It will have negative impact).
 
-  Teta 0: The patient does not have a bacterial infection            1: The patient has a bacterial infection       
-Actions Yes: Give the meditation       No: Do not give the patient the meditation     
+Teta => 0: The patient does not have a bacterial infection            1: The patient has a bacterial infection 
+
+Actions => Yes: Give the meditation       No: Do not give the patient the meditation     
+
 We can calculate the average pay off per each action which was shown in the table
+
+
+|               | \theta        |              | Average     |
+| ------------- | ------------- |------------- |------------- |
+|               | Content Cell  |Content Cell  |              |
+|               | Content Cell  |Content Cell  |              |
+|  Actions      | Content Cell  |Content Cell  |              |
+		teta	Average
+		0	1	
+Actions	Yes 	-300,000	200,000	100,000
+	No	0	0	0
+
  
 As the calculated average pay off corresponding action “No” is bigger that action “Yes”, the action “No ” will be selected.
 
