@@ -82,19 +82,27 @@ Suppose: prob{\theta=1}=0.8
 
 Suppose further our decision procedure calls for maximizing expected payoff. Then, the expected value for each action can be calculated as follows:
  
- ![1](Picturs/pic_2.png)
+ ![2](Picturs/pic_2.png)
+ ![3](Picturs/pic_3.png)
  
 Then, the expected payoff of action “yes” is bigger than action “no”.
 
 Some people may try to minimize the worse loss instead of maximizing expected payoff. They may try to avoid the worse outcome. 
+
 Exampe: there is a game and if you many play it or not. If you win, you will get $200,00; otherwise, you will loss $300,000. Losing $300,00 is high and it would be rational for someone not to use maximization expected payoff in this situation. Someone may have in a background attitude toward the risk. Then, it may be advisable for one not to maximize the expected value.
-		teta	Average
-		0	1	
-Actions	Yes 	-300,000	200,000	100,000
-	No	0	0	0
+
+ |               | 0             |      1       | Average      |
+ | ------------- | ------------- |------------- |------------- |
+ |       Yes     |  -300,000     |200,000       |   100,000    |
+ |       No      | 0             |0             |    0         |
+
 
 Where do these beliefs come from?
+
 If you have priority information/background knowledge, it can help to have sharpen beliefs. 
+
 In the case of the meditation problem. Suppose there is a free test and it gives you perfect information. 
+
 Then, you always run the test and base on the result you choose the appropriate action. 
+
 Suppose the test itself cost a specific amount of money.
