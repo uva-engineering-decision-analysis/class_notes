@@ -12,20 +12,44 @@ Sometimes you have too much information and it may overlam you and you need to b
 The framework, which we use is the framework of the statistical decision theory.
 ## Framework of the statistical decision theory:
 
-States of the word  $ \Rightarrow   \theta $       teta={0,1}   example: condition is good or not good for collection of data
-It is the state which is unknown and we have some information about it but it is imperfect
-We have beliefs about teta which can be represented by using 
-probability distribution over teta 
+States of the word  $ \theta \in \Theta $  
 
-If teta gets just two value including zero and one
- 
+It is the state, which is unknown and we have some information about it but it is imperfect.
 
-There actions that can be taken:
+Example:  $\Theta={0,1}$  
+
+0: The weather condition is not good for collection of data
+
+1: The weather condition is good for collection of data
+
+We have beliefs about teta which can be represented by using probability distribution over $ \theta $.  $p(\theta)$  
+
+If $ \theta $  gets just two valu, including ,zero and one"
  
-For example, it can be about giving a certain drug to the patient
-Or it can be about flying the plane or not
+ \begin{equation}
+  \begin{array}{l}
+    \Theta={0,1} \\ 
+     p(\theta)=prob{\theta=1}
+  \end{array}
+\end{equation}
  
-We have some kind of predictive models which somehow are going to help us to improve or sharpen the probability distribution over teta.  
+ 
+There are actions that can be taken:
+
+Actions:
+
+$$a \in A , A is a set of options$$
+
+For example, it can be about giving a certain drug to the patient ir it can be about flying the plane or not
+
+Example 1: A={give madication,don't}
+
+Example 2: A={fly the plane,don't}
+
+ 
+We have some kinds of predictive models which somehow are going to help us to improve or sharpen the probability distribution over $\theta$.  
+ 
+ 
  
 P0 is the decision maker beliefs about teta
 P1 it is the improved or sharpened the probability distribution over teta by using the predictive models
