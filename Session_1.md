@@ -67,16 +67,12 @@ Actions => Yes: Give the meditation       No: Do not give the patient the medita
 
 We can calculate the average pay off per each action which was shown in the table
 
+                                     \theta
+        |               | 0             |      1       | Average      |
+        | ------------- | ------------- |------------- |------------- |
+Actions |       Yes     | -3            |2             |   1          |
+        |       No      | 0             |0             |    0         |
 
-|               | \theta        |              | Average     |
-| ------------- | ------------- |------------- |------------- |
-|               | Content Cell  |Content Cell  |              |
-|               | Content Cell  |Content Cell  |              |
-|  Actions      | Content Cell  |Content Cell  |              |
-		teta	Average
-		0	1	
-Actions	Yes 	-300,000	200,000	100,000
-	No	0	0	0
 
  
 As the calculated average pay off corresponding action “No” is bigger that action “Yes”, the action “No ” will be selected.
