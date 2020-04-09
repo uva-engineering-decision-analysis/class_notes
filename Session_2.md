@@ -36,10 +36,12 @@ x \in X={0,1} corresponding to whether or not the petient has or does not have a
 
 Let present the same payoff in decision tree. We represent the decision problem imaginig you are going from lef to right, and as you go you are making choices.
 
-![1](pictures/pic_4.png/)
+Here we reprresents our action or decision with the rectangular boxes. There are two choices whether or not give the petient the medicine. If we give the medicine and the pecient has bacterial infection then the payoff will be equal to +2. On the other hand, if we give the medicine to the petient and the petient has the viral infection, then the payoff will be equal to -3. In the following decision tree, the $\theta$ shows our belief corresponding to the random variable value. If we do not give the petient the medicine the amount of the payoff will be equal to zero.
+
+![1](Picturs/pic_4.png)
  
 
-
+To solve the decision tree means to identify the optimal action to take that maximizes the payoff. In this case, the decision maker is supposed to be risk neutral. If the decision maker is risk averse, the decision maker does not want to make mistake. Therefore, he always decides  not to give medicine to the petient to avoide patoff "-3". 
 
 
 
