@@ -49,7 +49,7 @@ Example 2: A={fly the plane,don't}
  
 We have some kinds of predictive models which somehow are going to help us to improve or sharpen the probability distribution over $\theta$.  $(P^_{0}(\theta)=>P^_{1}(\theta))$
  
- 
+ ![1](Picturs/README.md)
  
 P0 is the decision maker beliefs about teta
 P1 it is the improved or sharpened the probability distribution over teta by using the predictive models
