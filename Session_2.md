@@ -21,6 +21,11 @@ $\Theta$: Parameter space
 
 ## Example:
 
+x \in X={0,1} corresponding to whether or not the petient has or does not have a bacterial infection as oppose to viral.
+
+ $\theta=[0,1]$  represents prob{x=1}
+ 
+ 
 
 
 
