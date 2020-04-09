@@ -8,6 +8,20 @@ Example: X={Infection is bacterial, infection is viral}={0,1}
 
 $\theta$: Parameters, ounobserved. It describes our knowledge or beliefs about probabilitys of different x.
 
+$\theta= prob{X=1} $
+
+Example: $\theta=[0,1]$
+
+$\pi(\theta)$ represents our knowledge our belief about $\theta$
+
+$\pi(\theta)$: Somme probability distribution over $\theta$
+
+$\Theta$: Parameter space
+
+
+## Example:
+
+
 
 
 
