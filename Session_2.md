@@ -25,6 +25,18 @@ x \in X={0,1} corresponding to whether or not the petient has or does not have a
 
  $\theta=[0,1]$  represents prob{x=1}
  
+ Actions={Giving the medication to the petient or not}
+ 
+ 
+ |               | 0             |      1       | Average      |
+ | ------------- | ------------- |------------- |------------- |
+ |       Yes     | -3            |2             |    1         |
+ |       No      | 0             |0             |    0         |
+
+
+Let present the same payoff in decision tree. We represent the decision problem imaginig you are going from lef to right, and as you go you are making choices.
+
+
  
 
 
