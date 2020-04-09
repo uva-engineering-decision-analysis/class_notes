@@ -101,8 +101,3 @@ Where do these beliefs come from?
 
 If you have priority information/background knowledge, it can help to have sharpen beliefs. 
 
-In the case of the meditation problem. Suppose there is a free test and it gives you perfect information. 
-
-Then, you always run the test and base on the result you choose the appropriate action. 
-
-Suppose the test itself cost a specific amount of money.
