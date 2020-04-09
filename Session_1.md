@@ -47,7 +47,7 @@ Example 1: A={give madication,don't}
 Example 2: A={fly the plane,don't}
 
  
-We have some kinds of predictive models which somehow are going to help us to improve or sharpen the probability distribution over $\theta$.  
+We have some kinds of predictive models which somehow are going to help us to improve or sharpen the probability distribution over $\theta$.  $(P^_{0}(\theta)=>P^_{1}(\theta))$
  
  
  
