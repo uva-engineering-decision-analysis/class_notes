@@ -67,7 +67,6 @@ Actions => Yes: Give the meditation       No: Do not give the patient the medita
 
 We can calculate the average pay off per each action which was shown in the table
 
-                                     \theta
  |               | 0             |      1       | Average      |
  | ------------- | ------------- |------------- |------------- |
  |       Yes     | -3            |2             |   1          |
@@ -77,11 +76,13 @@ We can calculate the average pay off per each action which was shown in the tabl
  
 As the calculated average pay off corresponding action “No” is bigger that action “Yes”, the action “No ” will be selected.
 
-Suppose 
- 
-Suppose further our decision procedure calls for maximizing expected payoff. Then, the expected value for each action can be calculated as follows:
+
+Suppose: prob{\theta=1}=0.8
  
 
+Suppose further our decision procedure calls for maximizing expected payoff. Then, the expected value for each action can be calculated as follows:
+ 
+ ![1](Picturs/pic_2.png)
  
 Then, the expected payoff of action “yes” is bigger than action “no”.
 
