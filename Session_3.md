@@ -22,6 +22,10 @@ Let $a_{i}$ fraction of portfolio allocated to asset i,i={1,2,3}
 
 We must have 0 \leq a_{i} \leq 1, \sum_{i=1}^{3} a_{i}=1$
 
+$A={<a_{1},a_{2}, a_{3}>| 0 \leq a_{i} \leq 1 for i=1,2,3, \sum_{i=1}^{3} a_{i}=1}$ 
+
+
+
 
 
 
