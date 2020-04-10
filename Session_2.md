@@ -53,6 +53,14 @@ However, here we assumed that the test is perfect and the result are conssistent
 After comming out the result, there is still a decision which we have to make. Here, we make choices condiyion on the outcomes. You may notice that if the test is imperfect, we will have to have another chance node after the decision nodes to represent the actual realization of the actual information. Here, it is not a case and the test is perfect.
 
 
+![1](Picturs/pic_5.png)
+
+
+
+
+
+
+
 
 
 
