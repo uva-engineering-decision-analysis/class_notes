@@ -48,6 +48,16 @@ For each action in the decision tree, the amount of expected payoff was claculat
 
 Suppose there is a test in advance and the result of the test showes the exact value for the x. Here, the question is how much you will pay for the test. 
 
+Suppose that we have prior decision node and there is not probability for this brach since it is a decision node. The outputs of this decision node "Buy test" are "No" and "Yes". In the case of "Yes", we have oval "test is positive" as which means the nature decides but the idea is we get to learn that decision, that outcome before we haveto commit to our action. So, in this branch we first need to resolve uncertainty and then we have to make a decision. We want to uptimize our decision. The outputs of the node "test is positive" are "1" as positive and "0" as negative but what are their probabilities. If your beliefs about the test were rational, then these probability or beliefs must be conssistent with the beliefs about whether or not it is bacterial infection ($\theta$). That is more important when the test is not perfect and it has so many information. Then, we have to think a little bit deeply about it and we have to find the relatioship between the result of the test and the result of underlying process (where or not it is bacterial infection).
+However, here we assumed that the test is perfect and the result are conssistent.
+After comming out the result, there is still a decision which we have to make. Here, we make choices condiyion on the outcomes. You may notice that if the test is imperfect, we will have to have another chance node after the decision nodes to represent the actual realization of the actual information. Here, it is not a case and the test is perfect.
+
+
+
+
+
+
+
 
 
 
