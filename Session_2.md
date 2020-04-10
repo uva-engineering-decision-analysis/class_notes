@@ -103,9 +103,14 @@ Should we buy the test? it depends on C and $\theta$
 $2 \theta -C \geq 0$
 
 
+ٌThe difference between two above cases is called the Expected value Information.
 
 
+$ \theta -C \geq 0.6$ \Rightarrow V=2 \theta - (5 \theta -3)$ 
 
+$\theta < 0.6 \Rightarrow V=2 \theta$
+
+Decision: buy the test if V>C
 
 
 
