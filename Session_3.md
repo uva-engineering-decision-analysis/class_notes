@@ -4,7 +4,7 @@
 Sometimes the actual decision problem was not very well articulated. In the decision problems there is always a cost or benefit and your goal is to find a trade off between them. So, when you are articulating the decision problem you are going to find what is the cost or benefit in the decision problem and what is the state variable space. The decision problems means the set of options that someone has to make. For example there is a fix budget for food and you are going to purchase nutrition and callories in order to maximize the quentify nutrition health benefits. 
 
 
-# Formulization for statistical decision model:
+## Formulization for statistical decision model:
 
 Action set $\Rightarrow A={a_{0},a_{1},...,a_{m}} or A\subseteqR^{M}$
 
