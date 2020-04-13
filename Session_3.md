@@ -14,7 +14,7 @@ Ex 1:Portfolio allocation, 2 assets including safe and risky
 
 Action: fraction of the portfolio in a risky asset
 
-$0 \leq a \leq 1$    A=[0,1]
+$0 \leq a \leq 1$    $A=[0,1]\equiv \bigtriangleup^{1}$ 
 
 Ex 2:Portfolio allocation, 3 assets including cash,bonds,and stacks
 
@@ -26,9 +26,21 @@ $A={<a_{1},a_{2}, a_{3}>| 0 \leq a_{i} \leq 1 for i=1,2,3, \sum_{i=1}^{3} a_{i}=
 
 $\equiv \bigtriangleup^{2}$   The unit simplex in $R^{3}$
 
-
+![7](Picturs/pic_7.png)
 
 There are a set of points, each of them are non negative and their summation is equal to the one.
+
+The following is the two dimensional object in the three dimensional space
+
+![8](Picturs/pic_8.png)
+
+Problems where you got to allocate some scarce resource according to some kind of finding comstraints, the action set often ends up looking something like the above figures.
+
+
+
+
+
+
 
 
 
