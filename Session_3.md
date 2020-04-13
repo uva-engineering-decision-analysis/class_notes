@@ -65,6 +65,26 @@ $Pr{X=1}=\theta$
 
 $Pr{X=0}=1-\theta$
 
+Ex: X is the next Thursday temperature at Charlottesville airport
+
+$X 	\sim N(\theta,\sigma^{2})$
+
+Based on the whether you may decide about shutting down schools. It will cost you if you decide to shut down school while the whether is good. Also, it will cost you if you do not shut down the school when the whether is not good.
+
+
+Suppose that X={1,2,...,N}, there are N states
+
+Ex: X is a randome variable
+
+Let $\theta_{i}=Pr{X=i}, i=1,2,..,n$
+
+Then $\Theta=<\theta_{1},\theta_{1},...,\theta_{N}>
+
+defines a probability distribution on X
+
+Here $0\le\theta_{1}\le 1, 	\sum\theta=1$
+
+The set of all possible $\theta=bigtriangleup^{n-1}$
 
 
 
