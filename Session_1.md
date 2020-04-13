@@ -12,7 +12,7 @@ Sometimes you have too much information and it may overlam you and you need to b
 The framework, which we use is the framework of the statistical decision theory.
 ## Framework of the statistical decision theory:
 
-States of the word  $ \theta \in \Theta $  
+States of the word  $\theta \in \Theta$  
 
 It is the state, which is unknown and we have some information about it but it is imperfect.
 
