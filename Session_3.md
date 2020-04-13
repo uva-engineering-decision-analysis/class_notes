@@ -37,8 +37,33 @@ The following is the two dimensional object in the three dimensional space
 Problems where you got to allocate some scarce resource according to some kind of finding comstraints, the action set often ends up looking something like the above figures.
 
 
+States: $x \in X$
 
+x refers to the observable data about the state of the worlds
 
+X state space or sample space
+
+In some application we are going to have dataset, we are going to analyze then and we will come up with some estimated parameters and some actions based on that. In other cases, we may not yet know the values of our data but we may anticipate.
+
+Example: Medical test, the previous example related to whether or not perform the test in order to gain new information.
+
+You have to decide based on the trade of associate with that test before you actually get the information
+
+Therefore, x in some application is the observable data which is not yet observed. 
+
+When x is uncertain, we represent its value as a random variable, X.
+
+EX: Medical test, X={test is negative, test is positive}={0,1}
+
+Let X random variable corresponding to the test result.
+
+We write $X 	\sim \beta(\theta)$
+
+X is distrbuted as a Bernoulli the parameter $\theta$
+
+$Pr{X=1}=\theta$
+
+$Pr{X=0}=1-\theta$
 
 
 
