@@ -86,9 +86,15 @@ Here $0\le\theta_{1}\le 1, 	\sum\theta=1$
 
 The set of all possible $\theta=bigtriangleup^{n-1}$
 
+ 
+What is corresponding to the good information? Having high probabilities for some outcomes and low probabilities for the rest. Ideally, having the probability equal to one for one of the outcomes and zero for the rest. 
+
+What is corresponding to the bad or no information? Having equal probabilities, uniform ditribution.
+
+If N=2,
 
 
-
+![9](Picturs/pic_9.png)
 
 
 
