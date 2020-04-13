@@ -24,6 +24,13 @@ We must have 0 \leq a_{i} \leq 1, \sum_{i=1}^{3} a_{i}=1$
 
 $A={<a_{1},a_{2}, a_{3}>| 0 \leq a_{i} \leq 1 for i=1,2,3, \sum_{i=1}^{3} a_{i}=1}$ 
 
+$\equiv \bigtriangleup^{2}$   The unit simplex in $R^{3}$
+
+
+
+There are a set of points, each of them are non negative and their summation is equal to the one.
+
+
 
 
 
