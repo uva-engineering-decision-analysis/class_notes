@@ -99,6 +99,9 @@ Third, choose optimal action given new information about $N(\mu,  \sigma})$
 How to do the above precedure? 
 Frequentist: $\mu^{^}=\frac{\Sigma_{i=1}^{n}\lambda_{i}}{n}$
 
+Ex: You have a flight, when you will leave your house? You will estimate the time it will take to arrive there. There is a cost to get the airport early and there is a cost to get there late. Why do not get the estimated value to get there at the right time. The payoff is not symmetric; if you get there a little bit early, there is a small cost. However, if you get there a little bit late, the cost will be huge. Therefore, considering the estimated $\mu$, and choosing the action that maximizes the payoff is not in fact the optimal decision making procedure. What you need is a rigorous way of deciding how much error there is and then dealing with payoff and the aptimal action given this error. This is what statistical decision theory will do for us. In the airport example, you will not consider the etimated arriving time ($\mu$). In fact, you know there is an error and you will take into account that error.
+
+
 
 
 
