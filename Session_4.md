@@ -55,9 +55,27 @@ X is the temperature,
 
 Each action is whether or not wear the jacket
 
-If yaou are the expecte value maximization decision maker, then the way
+If yaou are the expecte value maximization decision maker, then the way you choose the action is selecting the action with highest expected payoff.
 
 If you have two identical jacket, wearing each of them is one action and their pay of will be equal. Therefore, they are actually the same action and you can consider tham as a one choice.
+
+ If your goal is to avoide that outcome that have cost, for each of the actions we identify the worse possible outcome that is associated with that outcome. We do not care about the probabilities. 
+ 
+ \underline{u}(a_{1})$\min_{x\in X} u(a_{1},x)$ 
+ 
+The above equation shows the minimum possible worse case pay off if we choose action one. we have the same relationsheps for other actions.
+
+\underline{u}(a_{2})$\min_{x\in X} u(a_{2},x)$ 
+.
+.
+.
+
+In this problem we want to avoide worse outcomes. Therefor, choose $a^{*}$ as follows:
+
+$a^{*}= arg max_{i=1,2,...,M}\underline{u}(a_{i})$
+
+To choose this way is called following a "Max Min rule".
+
 
 
 
