@@ -42,3 +42,23 @@ $a^{*}=$
 
 Think of each action as a lottery 
 
+$a_{1} \longmapsto <u(a_{1},x_{1}),u(a_{1},x_{2}),...,u(a_{1},x_{N})>$
+
+$p(x_{1}),p(x_{2}),...,$p(x_{N})$
+
+$a_{2} \longmapsto <>)>$
+.
+.
+.
+
+X is the temperature, 
+
+Each action is whether or not wear the jacket
+
+If yaou are the expecte value maximization decision maker, then the way
+
+If you have two identical jacket, wearing each of them is one action and their pay of will be equal. Therefore, they are actually the same action and you can consider tham as a one choice.
+
+
+
+
