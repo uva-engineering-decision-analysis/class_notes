@@ -77,6 +77,30 @@ $a^{*}= arg max_{i=1,2,...,M}\underline{u}(a_{i})$
 To choose this way is called following a "Max Min rule".
 
 
+## Payoffs in terms of unobserved parameters
+
+Suppose we model $u(a,\theta)$: payoff is function of action and parametr $\theta$
+
+If suppose that we want to choose an action to max $u(a,\theta)$
+
+Assume that we have some oppurtunities to do some statistical sampling from some data which tells use something about $\theta$ and it helps us to sharppen our believes and based on that we can choose the right action.
+
+Suppose we do not know much about $\theta$, but we can collect data. 
+
+Ex: $x_{1},...,x_{n}\sim N(\mu,  \sigma})$ and it helps us to estimate $\theta$
+
+
+First,collect data: $x_{1},...,x_{n}$
+
+Second, estimate $N(\mu,  \sigma})$
+
+Third, choose optimal action given new information about $N(\mu,  \sigma})$
+
+How to do the above precedure? 
+Frequentist: $\mu^{^}=\frac{\Sigma_{i=1}^{n}\lambda_{i}}{n}$
+
+
+
 
 
 
