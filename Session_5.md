@@ -22,6 +22,23 @@ f(x): Defines the probability distribution for all $x_{i}$ (for now drop i)
 
 If X is discrete, e.g. X={1,...,m}
 
+$f(x_{j})=pr{X=x_{j}}, j=1,2,...,J$
+
+More generality, $B\subseteq X$
+
+Then, $pr{x\subseteq B}=\Sigma_{j\in B}f(x_{j}) j=1,2,...,J$
+
+If X is contineous
+
+$B\subseteq X$
+
+Then, $pr{x\subseteq B}=\int_{x\in B}f(x)dx $
+
+
+
+
+
+
 
 
 
