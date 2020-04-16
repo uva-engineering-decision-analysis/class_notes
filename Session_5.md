@@ -46,10 +46,9 @@ $\theta=<\mu,\sigma^{2}>$
 
 Let $\pi(\theta)$ denotes our prior believs about values of $\theta$
 
+We are going to use any kind of predictive model or tool to sharpen or probabilirt distribution over the state variables as it was shown in the below figure. in this way we would have more confidence when we choose an action. 
 
-
-
-
+![11](Picturs/pic_11.png)
 
 
 
