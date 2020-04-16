@@ -34,7 +34,17 @@ $B\subseteq X$
 
 Then, $pr{x\subseteq B}=\int_{x\in B}f(x)dx $
 
+![10](Picturs/pic_10.png)
 
+Suppose that there are probability density depends on the values of the unobserved parameter ($\theta$), e.g. If we belive that the values are normally distributed, then it depends on two parameters including the $\mu$ and $\sigma$ of the distribution. 
+
+$f(x)=f(x\\theta)$
+
+Ex: $x_{1},x_{2},...,x_{n}\sim N(\mu,\sigma)$
+
+$\theta=<\mu,\sigma^{2}>$
+
+Let $\pi(\theta)$ denotes our prior believs about values of $\theta$
 
 
 
