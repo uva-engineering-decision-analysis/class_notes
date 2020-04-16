@@ -12,6 +12,19 @@ $x_{1},x_{2},...,x_{n}$ random variables on X
 
 Suppose we have uncertainty about our parameter values and in our game directly or indirectly we are depends on the values of the unobserved parameters.
 
+So, we suppose that we got some posibility to get better information about unobserved parameters and there can be different ways.  Here, we suppose we are going to get information by using statistical sampling from the state space and the statistical inference.
+
+EX: Who is going to win the election and it depends on the population. Therefore, you can learn by doing some statistical smapling and from that you can get information.
+
+When we are doing sampling, we suppose that they are independent and identically distributed (iid).
+
+f(x): Defines the probability distribution for all $x_{i}$ (for now drop i)
+
+If X is discrete, e.g. X={1,...,m}
+
+
+
+
 
 
 
