@@ -51,6 +51,9 @@ We are going to use any kind of predictive model or tool to sharpen or probabili
 ![11](Picturs/pic_11.png)
 
 
+Suppose we have a loss function that depends on $\theta$: $L(a,\theta}$
+
+
 
 
 
