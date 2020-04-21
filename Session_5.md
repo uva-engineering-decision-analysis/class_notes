@@ -141,6 +141,7 @@ $\pi(\theta\x_{1},x_{2},...,x_{n}$: Updated or posterior beliefs
 One important approach to updating the beliefs is Baysian Analysis.
 
 
+
  
 
 
