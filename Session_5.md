@@ -65,7 +65,7 @@ Depending on true value of $\theta$, get some realize
 
 Expected loss, given beliefs $\pi(\theta)$ 
 
-$E[L(a\\theta)=\int_{\theta\in\Theta}L(a\\theta)\pi(\theta)]$
+$E[L(a\\theta)]=\int_{\theta\in\Theta}L(a\\theta)\pi(\theta)d\theta$
 
 
 EX: The airport departure decision: if you have the suppose that $\theta$ governs how long is going to take you to get to the airport in the likelihood of the plane is late or other things; a is how early you decide to leave. Then, when you choose the actiob (when you are going to leave), given the beliefs you have the expected pay off that includes all of the probabilities over your beliefs about $\theta$.
@@ -82,11 +82,32 @@ a: how long you give yourself
   L(a\\theta) =
     \begin{cases}
       C(a-\theta) & \text{if $a\ge\theta$ }\\
-      -1000 & \text{if $a\le\theta$ }
+      1000 & \text{if $a\le\theta$ }
     \end{cases}       
 \end{equation}
 
+C: How much you value your time ($/hr)
 
+$E^{\pi}[L(a\\theta)]=\int L(a\\theta)\pi(\theta)d\theta$
+
+If $\pi(\theta)\sim N(\mu,\sigma^{2}_{\theta})$
+
+Then, $E^{\pi}[L(a\\theta)]=\int L(a\\theta)e^{-\frac{(a-\mu_{\theta})^2}{\sigma_{\theta}}}$
+
+We think $\mu_{\theta}$ is the most likelihood $\theta$. 
+
+We keep our example simple and we suppose that there is just only early and late. You leave early or not and you hot a traffic or not. So, you have two by two decision and if you are early you waste your time and if you are late you miss the flight. In that case, this problem looks very much like our problem about giving the meditation to the patient. 
+
+The point is , you do not assume that $\theta=E[\theta]=\int\pi(\theta)d\theta=\mu_{\theta}$
+
+and then solve $min[L(a\\mu_{\theta})]$
+
+Instead, $min E^{\pi}[L(a\\theta)]$
+
+In general, 
+
+
+We assume the most likely is to leave the house 1.5 hour before our flight. So, we optimize 
 
 
 
