@@ -53,6 +53,38 @@ We are going to use any kind of predictive model or tool to sharpen or probabili
 
 Suppose we have a loss function that depends on $\theta$: $L(a,\theta}$
 
+Suppose we know exactly what $\theta$ is, then choosing optimal $a^{*}$ is trivial.
+
+$a^{*}$ =arg max L(a\\theta)
+
+more generally suppose our belifs about $\theta$ reprsentated by $\pi(\theta)$
+
+Then, for each action $a \in A$, $L(a\\theta) is a random variable. When you choose an action, you are choosing in effect the lottery, and then depending on $\theta$, you will realize some loss.
+
+Depending on true value of $\theta$, get some realize 
+
+Expected loss, given beliefs $\pi(\theta)$ 
+
+$E[L(a\\theta)=\int_{\theta\in\Theta}L(a\\theta)\pi(\theta)]$
+
+
+EX: The airport departure decision: if you have the suppose that $\theta$ governs how long is going to take you to get to the airport in the likelihood of the plane is late or other things; a is how early you decide to leave. Then, when you choose the actiob (when you are going to leave), given the beliefs you have the expected pay off that includes all of the probabilities over your beliefs about $\theta$.
+
+$\theta$: The time your plane leaves. HOw long you wil need.
+
+$\pi(\theta)$: your beliefs about $\theta$
+
+![12](Picturs/pic_12.png)
+
+a: how long you give yourself 
+
+$L(a\\theta)=$
+
+
+
+
+
+
 
 
 
