@@ -78,7 +78,13 @@ $\pi(\theta)$: your beliefs about $\theta$
 
 a: how long you give yourself 
 
-$L(a\\theta)=$
+\begin{equation}
+  L(a\\theta) =
+    \begin{cases}
+      C(a-\theta) & \text{if $a\ge\theta$ }\\
+      -1000 & \text{if $a\le\theta$ }
+    \end{cases}       
+\end{equation}
 
 
 
