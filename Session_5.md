@@ -133,8 +133,12 @@ In general,
 
 you get some data
 
-$x_{1},x_{2},...,x_{n} $
+$x_{1},x_{2},...,x_{n} \longmapsto \pi(\theta\x_{1},x_{2},...,x_{n})$
 
+$\pi(\theta\x_{1},x_{2},...,x_{n}$: Updated or posterior beliefs
+
+
+One important approach to updating the beliefs is Baysian Analysis.
 
 
  
