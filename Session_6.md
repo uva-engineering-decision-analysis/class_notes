@@ -37,9 +37,9 @@
  
    - *Example:* Maximize expected payoffs.
    - *Example:* Maximize expected utility of payoffs.
-   - *Example:* 'Minimax': Choose the action to minimize possible loss, irrespective of probabilities.
-
-  * The decision-making principle encodes the actor's attitude towards risk -- the willingness to accept losses in some uncertain states of the world, in exchange for acheiving gains in other states of the world.
+   - *Example:* 'Minimax': Choose the action to minimize possible loss, irrespective of probabilities. (extreme form of risk aversion)
+ 
+ * The decision-making principle encodes the actor's attitude towards risk -- the willingness to accept losses in some uncertain states of the world, in exchange for acheiving gains in other states of the world.
     - The study of attitudes towards risk and loss is huge topic in economics, finance, and psychology. We will cover it only glancingingly.
     - For your applications, just at minimum be aware that the actor's optimum choices may not be driven by goal to maximize expected gains (= minimize expected losses). 
    
@@ -47,8 +47,9 @@
  
  After modeling your problem, you will have a set of actions, their payoffs and corresponding probabilitie. Now, what you should do? Which option would be best.
  
-You have to have some principles for converting lotteries over payoffs into an optimal choice. There are different ways to do this, one of the ways is maximization expectation payoffs.
+You have to have some principles for converting lotteries over payoffs into an optimal choice. There are different ways to do this, one of the ways is maximization expectation payoffs. Have it in your mind that when you have uncertianty you should not collapse the uncertainty, and then consider expected value. 
  
+ Ex: We were consulting to the atmospheric scientists and they had planes that could fly arround and collect data. Part of the challenge was the amount of the flight and the number of the days in a season were restricted. They did not just have one decison about where to go. THey had three possible options. There was a menue of choices instead of yes/no. There were including 1) Flight in zone one, 2) Flight in zone two, 3) Flight in zone three, or do not fly. The trick was what they care about it at the end of the season was what portfolio of the data did they have. What they wanted was the more data is better but they also wanted the more balanced data. They wanted data with nearlly the same portion from all three zones. So, we had to extract from them what was the utility function. How much would they care about the balancing the portfolio? How much more data would they give up to have more balance data? The atmospheric scientists did not know what is the utility function. We had to go find their preferences in this process to get enough information about how to make this trade off. Then, we used the utility function as an objective function.
  
  
 
