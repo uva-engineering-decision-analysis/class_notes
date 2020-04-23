@@ -84,5 +84,5 @@ $$L_1(a;\theta) = E[L_0(a;X) | \theta]$$
 Ex: If X is a random variable and the distribution over X governs by $\theta$. So, a realization is a draw from the distribution and the parameters. 
 
 
-
+Ex: You are going to do fraud detection. 
 
