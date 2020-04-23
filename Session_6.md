@@ -49,8 +49,40 @@
  
 You have to have some principles for converting lotteries over payoffs into an optimal choice. There are different ways to do this, one of the ways is maximization expectation payoffs. Have it in your mind that when you have uncertianty you should not collapse the uncertainty, and then consider expected value. 
  
- Ex: We were consulting to the atmospheric scientists and they had planes that could fly arround and collect data. Part of the challenge was the amount of the flight and the number of the days in a season were restricted. They did not just have one decison about where to go. THey had three possible options. There was a menue of choices instead of yes/no. There were including 1) Flight in zone one, 2) Flight in zone two, 3) Flight in zone three, or do not fly. The trick was what they care about it at the end of the season was what portfolio of the data did they have. What they wanted was the more data is better but they also wanted the more balanced data. They wanted data with nearlly the same portion from all three zones. So, we had to extract from them what was the utility function. How much would they care about the balancing the portfolio? How much more data would they give up to have more balance data? The atmospheric scientists did not know what is the utility function. We had to go find their preferences in this process to get enough information about how to make this trade off. Then, we used the utility function as an objective function.
+Ex (Flight): We were consulting to the atmospheric scientists and they had planes that could fly arround and collect data. Part of the challenge was the amount of the flight and the number of the days in a season were restricted. They did not just have one decison about where to go. THey had three possible options. There was a menue of choices instead of yes/no. There were including 1) Flight in zone one, 2) Flight in zone two, 3) Flight in zone three, or do not fly. The trick was what they care about it at the end of the season was what portfolio of the data did they have. What they wanted was the more data is better but they also wanted the more balanced data. They wanted data with nearlly the same portion from all three zones. So, we had to extract from them what was the utility function. How much would they care about the balancing the portfolio? How much more data would they give up to have more balance data? The atmospheric scientists did not know what is the utility function. We had to go find their preferences in this process to get enough information about how to make this trade off. Then, we used the utility function as an objective function. In those case, the goal is not just maximiza as much data as possible but they also want the balaance portfolio. In this application we need to think about the shape of the utility function.
  
- 
+### Integrating predictive and inferential tools into the decision calculus
 
+In general, your predictive model serves to *reduce uncertainty* over future values of the states of nature.
+
+They *sharpen the probability distribution* over states of nature.
+
+(In terms of probability theory: they involve a *change of measure*.)
+
+The actor can now choose an optimal action based not on her *prior* (or *naive*) beliefs, but on her *posterior* beliefs, conditioned on the current data.
    
+### Payoff functions: Define in terms of $x$ (state) or $\theta$ (parameter value)?
+
+Depending on your appplication, it may make sense to model payoffs (or losses) as either a function of observed realized state $x \in \mathbb{X}$, e.g., $x$ denotes realized temperature:
+
+$$L_0 = L_0(a;x)$$
+
+or in terms of the value of an unobserved parameter, e.g., $\theta$ denotes mean temperature:
+
+$$L_1 = L_1(a; \theta)$$
+
+Ex: Suppose you are going to think about how much you are spending on energy or fuel tommorrow. For example you want to decide how to set the thermostat and your losses is based on your expenditure and your comfort. Depending on how your dicision making problem is set up, it makes sense to represent that explicitly in terms of your on realized observable temprature or it could make sense to think about it in terms of unobserved parameters of the model.
+
+In the example flight x was for eachday in the field season, there is a reallization either the condition is good for data collection or not. The action in that case is either fly on that day or not. So, $\theta$ will describe the likelihood of the good or badconditions but at the end of the field season what the decision maker cared about is not the likelihood, thwy cared about how much data they actually got.based these, the loss is explicitly based on the reallized outcomes.
+
+### Parameter-dependent payoffs as reduced form of state-dependent payoffs
+
+In many cases, you can represent the $\theta$ formulation as the *reduced form* of the $x$ formulation, e.g.
+
+$$L_1(a;\theta) = E[L_0(a;X) | \theta]$$
+
+Ex: If X is a random variable and the distribution over X governs by $\theta$. So, a realization is a draw from the distribution and the parameters. 
+
+
+
+
