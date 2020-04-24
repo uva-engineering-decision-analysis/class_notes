@@ -96,4 +96,4 @@ There is a raw data and preprocessing will be done on them. The output wil be th
 
 ![14](Picturs/pic_14.png)
 
-
+Intertemporal optimization: It is for set of approches for dealing cases, in which we have a set of copies of decisions and they have impact on each other. 
