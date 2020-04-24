@@ -92,7 +92,7 @@ Ex: You are going to do fraud detection. You have financial transaction come to 
 
 2- Put into the production
 
-There is a raw data and preprocessing will be done on them. The output wil be the structed data, which is a data in terms which youcan actually use. 
+There is a raw data and preprocessing will be done on them. The output wil be the structured data, which is a data in terms which youcan actually use. You use the structured data to callibrate your model. What it allows you to do is to get a new input data and map your prior beliefs to the posterior believs about the data. Then, given your posterior beliefs, the output of the optimization model will be the optimal choice. 
 
 ![14](Picturs/pic_14.png)
 
