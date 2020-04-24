@@ -94,5 +94,6 @@ Ex: You are going to do fraud detection. You have financial transaction come to 
 
 There is a raw data and preprocessing will be done on them. The output wil be the structed data, which is a data in terms which youcan actually use. 
 
+![14](Picturs/pic_14.png)
 
 
