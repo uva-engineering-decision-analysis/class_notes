@@ -84,5 +84,13 @@ $$L_1(a;\theta) = E[L_0(a;X) | \theta]$$
 Ex: If X is a random variable and the distribution over X governs by $\theta$. So, a realization is a draw from the distribution and the parameters. 
 
 
-Ex: You are going to do fraud detection. 
+Ex: You are going to do fraud detection. You have financial transaction come to the system. The computer has to very quickly identify the liklihood if the transaction is fraud or not. You have a lot of data and small percentage of them are likelihood probabilty and the action is whether or not flag that transaction and give it more screening by human analyst. 
+
+### Building and Running a decision rule:
+
+1- Building and calibrating the tools
+
+2- Put into the production
+
+
 
