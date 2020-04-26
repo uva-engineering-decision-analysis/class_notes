@@ -125,6 +125,23 @@ Assume you've got the right answer (!). Given that this answer is optimal, deriv
 
 Solve via backward induction.
 
+![15](Picturs/pic_15.png)
+
+
+$< x_D, \ldots, x_1>$    random variable of states  $X \in {0,1}^{D}$
+$a = < a_D, \ldots, a_1>$    choices    $a \in {0,1}^{D}$
+
+#### Decision problem
+
+We have as much data to make the expectation.
+
+$ max_{a} E[a.X] $
+
+We want to choose sequence of the actions that maximizes the above objective function.
+
+Successes are flights launched on days with good conditions. If we fly the plane on he day that the condintion of the weather is not good it is not a success. Beside, if we do not fly the plane on the day that the condition is good is not success to. 
+
+
 ### 
 
 Suppose an optimal decision rule $a(d, f | s)$ has been found. 
