@@ -12,6 +12,94 @@ Fly/No-fly decisions must be made 1 day ahead, based on imperfect day-ahead fore
 To solve this problem, traditionally the decision making process features a lot of atmosphoric scientists sitting arround the table and looking at the maps of the forcasts and argueing with each other. In that situation, they got tons of the forcasts and discuss it with each other. they may not have done a bad job about figuring out what is the probability of the having good weather tommorrow. However, they may not have been good at 
 figuring out what is the opportunity cost of using up some of the flight hours from the budget. They may risk and  used up the flight in the bad condithions and there is some cost in terms of less optionality to take advantage of possibly more promissing conditions later in the field season. The brain cannot do dynamic optimization and statistical process.
 
-Solving this problem with decision tools which outcomes:
+## Formal model of the Cloud Hunter's decision problem
 
-1-
+### Model setup: Conditions for data collection over the course of the field season
+
+$D$ : length of the field season in days
+
+$d = D, \ldots, 1$ : index of dates (we think of d as how many days we have left rather that counting from start of the field season forward)
+
+$X_d$ : quality of conditions for data collection: 
+
+ * $X_d = 1$ if conditions on date $d$ are good, 0 otherwise
+ * Each $X_d$ a binary random state variable, i.e., a Bernoulli trial
+
+A field season is a particular realization $x_D, \ldots, x_1$ of the stochastic process 
+$X_D,\ldots, X_1$.
+
+Will assume the $X_d$ are independent and identically distributed (i.i.d.). 
+
+ * Assumption not actually required, but keeps things simpler and clearer.
+
+Vector notation: $\bf{X} =$$< X_D, \ldots, X_1>$ denotes the stochastic process; $\bf{x} =$$< x_D, \ldots, x_1>$ denotes a particular realization.
+
+### Model setup: Decisions, resource constraints
+
+$F \leq D$ : number of flights in the Cloud Hunter’s budget. 
+
+$f = F, \ldots, 1$ : index of flights remaining in budget
+
+$a_d$ :  binary control variables ("actions")
+
+* $a_d = 1$ iff they opt to fly on date $d$, 0 otherwise
+
+$\bf{a} =$$< a_D, \ldots, a_1>$ : actions chosen on dates $d = D, \ldots, 1$
+
+Resource constraint: $\sum_d a_d \leq F$.
+
+(Assume flights left over at the end of the season have no residual value.)
+
+### Payoffs and objectives
+
+*Payoffs*: For a given sequence of choices $\bf{a}$ and realizations $\bf{x}$, the realized amount of data collected $U$ is given by 
+$$U = \mathbf{a \cdot x} =\sum_d a_d x_d$$.
+
+*Decision-maker's objective*: Choose a fly/no-fly decision rule to maximize data collected in expection, subject to the resource constraint on total allowable flights:
+
+Choose $\bf{a}$ to $max_{\bf{a}} = E[\bf{a} \cdot \bf{X}]$, subject to $\sum_d a_d \leq F$.
+
+\textbf{Important:} This is a *substantive assumption* about the decision-maker's goals.
+
+  * Models a decision-maker with a high tolerance for *risk*. 
+
+
+### Forecasts
+
+Give we have a forcasting system and it delivers us a set of singnals instead of forcasts which you should believe and take literally. THese signals are not the output of the weathe prediction model. We just consider it somehow correlated with the process which we care about. We do not take literally what the signal says, instead we map this signal to the probability distribution based on our experience or understanding of the signaling system. Your job is to decode the dignal and you should find out how to map the given signal to the probability distribution over the state of the word. 
+
+Everyday, here, atmosphoric scientists got forcasting signal and it drawn from some set of possible signals. Given that signal, we have some  way to convert that signal to probability of a certain day. When we figure out how that mapping works, we no longer care about any of the stuff that went into to make the mapping.
+
+
+Decision taken on basis of a day-ahead forecast.
+
+Before taking each decision, decision-maker receives a forecast signal $s_d \in \mathbb{S}$.
+
+Calibration: map this signal to a probability of good conditions:
+
+$$p(s) =  \Pr\{X_d = 1 | s_d = s\}$$.
+
+(Will assume stationarity.)
+
+
+
+### Distribution of forecast signals
+
+More than one day ahead, don't know which forecast signals $s \in \mathbb{S}$ will be received.
+
+But, *do* know the the likelihood of receiving different signals.
+
+$\pi(s)$ : probability that forecasting system will generate signal $s$. 
+
+$\pi(\cdot)$ defines a probability distribution over the set $\mathbb{S}$ of possible forecast signals.
+
+### The task of the decision analyst
+
+Given this set-up, the job of the decision analyst is to devise an *optimal decision rule* $a^* = a(d,f |p)$ that delivers a recommended action---fly or no-fly---as a function of 
+
+ * $d$ the number of days left in the field season, 
+ * $f$ the number of flights left in the budget, and 
+ * $p(s)$ the forecast probability that a flight today would be successful.
+ 
+A decision rule $a(\cdot)$ is deemed optimal if its consistent application maximizes in expectation the yield of successful flights realized from a given budget $F$.
+
