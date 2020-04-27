@@ -141,6 +141,18 @@ We want to choose sequence of the actions that maximizes the above objective fun
 
 Successes are flights launched on days with good conditions. If we fly the plane on he day that the condintion of the weather is not good it is not a success. Beside, if we do not fly the plane on the day that the condition is good is not success to. 
 
+Each day we get signals: $s_{D}.s_{D-1},\ldots, s_{1}\in S$   Forcast signals
+
+We have a calibrated fuction that maps the signal
+
+$p(s)=pr{X_{d}|s_{d}=s}$
+
+How it works:
+
+Suppose 10 days left in the field season. We have three forcast in our budget. The forcast says that there 30 percent chance that tommorrow is going to be a good condition. Should we go for it? To solve this case think of the simpler version of this case. Instead of thinking there are ten days left, consider there is only one day left
+
+
+
 
 ### 
 
