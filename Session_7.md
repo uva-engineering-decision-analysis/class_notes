@@ -104,7 +104,7 @@ Given this set-up, the job of the decision analyst is to devise an *optimal deci
  
 A decision rule $a(\cdot)$ is deemed optimal if its consistent application maximizes in expectation the yield of successful flights realized from a given budget $F$.
 
-
+ 
 
 
 ### Comment
@@ -149,7 +149,23 @@ $p(s)=pr{X_{d}|s_{d}=s}$
 
 How it works:
 
-Suppose 10 days left in the field season. We have three forcast in our budget. The forcast says that there 30 percent chance that tommorrow is going to be a good condition. Should we go for it? To solve this case think of the simpler version of this case. Instead of thinking there are ten days left, consider there is only one day left
+Suppose 10 days left in the field season. We have three forcast in our budget. The forcast says that there 30 percent chance that tommorrow is going to be a good condition. Should we go for it? To solve this case think of the simpler version of this case. Instead of thinking there are ten days left, consider there is only one day left and you have one flight left in your budget, you will fly your plane. On the other hand, consider there is only one day left and you have no flight left in your budget, you won't fly your plane. In this case, having only one day left, there is no decision to make.Consider two days left, and there is only one fligt left. Now, we have real decision. We have forcast signal only for one day ahead ($s_{d}$). For two days ahead, $S_{d}$ is a random forcast signal with probability distribution $\pi(.)$
+
+S={1,2,...,24} are the forcasting signals that we may get. For example, for tommorrow we get one of these signal and when we get it we are able to convert it to the probability. 
+
+Case: d=2 and f=1
+
+We know $s_{2}$, therefore $p(s_{d})=Pr{X_{d}=1|s_{d}}$
+
+We know $s_{1}$ will take one of the 24 values, and how likely each is.
+
+Our goal is to maximie the objective function. We know based on what we do today, we already know what we are going to do tomorrow. If we fly today, by how much in expectation we will increase our toatal take?
+
+
+
+
+
+
 
 
 
