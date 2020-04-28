@@ -1,5 +1,10 @@
 # Session 8
 
+There is a report called "Completing the forcast". When we produce a forcast, of course, there is an error. What we can do is see if we can actually represent the error in our forcast, in a rigorous way. The weather system is a cheotic system which implies something in feature called sensitive dependence on initial conditions. IT means if you misspicify your initiale condition by just a little bit, then as you forcast over time, evenif you have the physics completely accurate, that small error in the way you specify the correct state of the system will result in the larger error.
+
+
+![15](Picturs/pic_15.png)
+
 
 
 Right bottom circle is the end of the season. At that time, we would be out of the season and out of the flight. Therefore, the expected flight for rest of the season would be zero. In addition, for all of the bottom circles, the expected value again would be zero. On the circle corresponding one day left and one flight left, the expected value would be 28. What would be the value of being at the circle corresponding to two days left and one flight left? We know there are two ways to reach to the end of the season. We will choose to go for one day left and no fligt if its likelihood is bigger than 0.28. So, in this way, you will go backward.
