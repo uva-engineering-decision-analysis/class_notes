@@ -125,7 +125,6 @@ Assume you've got the right answer (!). Given that this answer is optimal, deriv
 
 Solve via backward induction.
 
-![15](Picturs/pic_15.png)
 
 
 $< x_D, \ldots, x_1>$    random variable of states  $X \in {0,1}^{D}$
@@ -159,61 +158,46 @@ We know $s_{2}$, therefore $p(s_{d})=Pr{X_{d}=1|s_{d}}$
 
 We know $s_{1}$ will take one of the 24 values, and how likely each is.
 
-Our goal is to maximie the objective function. We know based on what we do today, we already know what we are going to do tomorrow. If we fly today, by how much in expectation we will increase our toatal take?
+Our goal is to maximie the objective function. We know based on what we do today, we already know what we are going to do tomorrow. If we fly today, by how much in expectation we will increase our toatal take? If we fly today what would be the expected marginal increase? 
+
+Suppose we have now 29 successes, Suppose $a_{2}=1$
+
+U: number of the successes at the end of the season
+
+If $x_{2}=1$, U=30
+
+$x_{1}=0$, U=29
+
+so, if $a_{2}=1$ (i.e. we fly today)
+
+Then E[U]=29+$p(s_{2})$(1)+$1-p(s_{2})$(0)=29+$p(s_{2})$
+
+We wanted to maximize the expected value.
+
+So, $E[U|a_{2}=1]=29+p(s_{2})$
+
+$E[U|a_{2}=0]=29+E[a_{1}.x_{1}|a_{1}=1]$(since $a_{2}=0$ then $a_{1}=1$)
+
+$=E^{x}[p(s)]=\pi(S=s_{1})Pr{x_{1}=1|s_{1}=1}+\pi(S=s_{2})Pr{x_{1}=1|s_{2}=1}$+...
+
+$\Sigma\pi(s).p(s)=E^{\pi}[p(s)]$
+
+So, Should you fly today or not. We choose to fly today if "29+$p(s_{2})$" is greater then $E^{\pi}[p(s)]$.
+
+So, we choose $a_{2}$ iff $p(s_{2})	\ge E^{\pi}[p(s)]$
+
+Let $a^{*}_{2}$ denote the optimal choice
+
+Let $v(2,1)=E[U|a_{2}=a^{*}_{2}]
+
+=29+$max{p(s_{2}), E^{\pi}[p(s)]}$
+
+
+![15](Picturs/pic_15.png)
+
+You will solve this through backward induction.
 
 
 
 
-
-
-
-
-
-
-### 
-
-Suppose an optimal decision rule $a(d, f | s)$ has been found. 
-
-Let $V(d, f)$ denote the expected number of successes that would be realized from repeated application of this rule, starting from initial conditions $<d, f>$. 
-
-By construction, $V(\cdot)$ equals the maximand of the decision-maker's objective function, beginning from these initial conditions, under the substitution $a = a(d, f | s)$:
-
-$$V(d,f) = E^{\pi} \left[ \sum_{i = d,\ldots, 1} a(i,f_i | s_i) \cdot X_i \right]$$
-where the expectation is taken over the probability distribution of all possible sequences of forecast signals (determined by $\pi$), and where $f_i$ denotes the number of flights remaining on date $i$ when the optimal program is followed.
-
-###
-
-$V(d,f)$ called the *value function* for this problem.
-
-Because $a(\cdot)$ is assumed to be optimal, $V(\cdot)$ must satisfy a particular recursive relationship:
-$$ V(d,f) = E^{\pi} \left[ a^*_d \cdot X_d  + V(d-1, f- a^*_d) \right]$$
-where $a^*_d = a(d,f | s_d)$ is the optimal decision.
-###
-Once the forecast signal $s_d$ is received, $a^*$ will be chosen optimally:
-
-  * If $a^* = 1$, then $V(d,f | s_d) = E \left[X_d | s_d \right]  + V(d-1, f- 1)$.
-  * If $a^* = 0$, then $V(d,f | s_d) = V(d-1, f)$.
-
-Since $V(\cdot)$ is by construction a maximum, we must have:
-$$V(d,f | s_d) = \max \{ E \left[ X_d | s_d \right]  + V(d-1, f- 1), V(d-1, f) \}$$
-               
-$=  \max \{ p(s_d) + V(d-1, f- 1), V(d-1, f) \}$
-               
-###
-
-This formula implies the optimal decision rule: $a^* = 1$ ("fly") only if
-
-$$ p(s_d) \geq V(d-1, f) -V(d-1, f- 1)$$
-i.e., when the expected payoff of the current day's opportunity exceeds the loss in marginal cost associated with arriving tomorrow with one fewer flight in the bank.
-
-Call $p(s_d)$ the *hurdle probability*.
-
-
-
-
-Successes are flights launched on days with good conditions. 
-
-Type I errors are decisions to fly only to find no clouds.
-
-Type II errors are decisions to stand down only to find that the desired conditions existed.
 
