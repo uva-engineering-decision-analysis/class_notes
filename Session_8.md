@@ -1,6 +1,6 @@
 # Session 8
 
-There is a report called "Completing the forcast". When we produce a forcast, of course, there is an error. What we can do is see if we can actually represent the error in our forcast, in a rigorous way. The weather system is a cheotic system which implies something in feature called sensitive dependence on initial conditions. IT means if you misspicify your initiale condition by just a little bit, then as you forcast over time, evenif you have the physics completely accurate, that small error in the way you specify the correct state of the system will result in the larger error.
+There is a report called "Completing the forcast". When we produce a forcast, of course, there is an error. What we can do is see if we can actually represent the error in our forcast, in a rigorous way. The weather system is a cheotic system which implies something in feature called sensitive dependence on initial conditions. IT means if you misspicify your initiale condition by just a little bit, then as you forcast over time, evenif you have the physics completely accurate, that small error in the way you specify the correct state of the system will will inevitably lead to larger errors over time. Those errors do not grow linearly with time; they explode. 
 
 
 ![15](Picturs/pic_15.png)
