@@ -6,6 +6,24 @@ There is a report called "Completing the forcast". When we produce a forcast, of
 
 There was a flood in Red River in Grand Forks in 1997. They had prepared for the flood because they were getting forcast from Natural weather servise about how high river would rise. Then, they estimated how hight the flood would go and gave the expected value. They forcasted the rivers only got up to "50 ft". Therefore, they decided to make sand bags and they thought if the hight of the sand bags were 50 ft, they would be safe. But, they did not. The forcast and the actual rising were shown in the graph. What happen was it bumped up the forcast very fast and there was not enough time left to increase the hight of the sand bags. Therefore, there were a lot of blames that the Natural weather servise did poor job. It was not actually fair, because they gave the best forcast best on the data. The problem was that expected value is not the infrmation that they needed. They needed the information about how high the sand bag should be. They did not to know the best estimation for sand bags, they needed to know what is the probability of getting higher than 50 ft, 51 ft and so on. When they had that information, they could have themselves calibrated how much risk they were willing to take. It was turn out that the Natural weather servise, they actually had that kind of theinformation but nobody ask them to produce that. They found ou that the 54 ft was within the reasonable margin of the error goven the analatics they were using. The left side graph was that kind of information thay have started to produce since that event. In this graph, the green line shows the expected value and the blue boxes show the amount of the error. 
 
+### The promise: data-driven decision making
+
+Data science hype: "Better information $\rightarrow$ Better decisions!"
+
+*Claim:* That's wrong. 
+
+Because, more inrrelavant information will more distract you away from the points of data you really need for that decision. 
+
+
+Data-driven decision-making also requires complementary analytics and products: 
+
+ * *Prediction* : calibration of error, $\rightarrow$ *probabilistic* forecasts
+ 
+ * *Optimization* : application-specific models and tools, attention to user objectives
+ 
+ * *Visualization/communication* : intelligence *actionable* in terms of user's decision problem
+ 
+In this example: If they built the sand bags higher than the estimation it would be costly; if they built lower than thet it would be more disaster and the cos of the error is not symmetric here. The cost of the error is greter in on direction. You want the calibration of the error in the form of the probabilistic forcast. You do not want the whole distribution. You have to identify where in that distribution is relevant to the decision you want to make. Then, you do the optimization. In this case, they wil solve the risk management problem. 
 
 
 
