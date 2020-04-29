@@ -210,9 +210,15 @@ These forcast are not perfect.
 
 We got the American prediction model and it will predict for us, reletive humidity at different pressure level. It will give us the prediction of what tomorrow bring and we can put it in one of the boxes. Now we we want to know how good the American prediction system is even if we predict the right box. We got the result which is shown in the above picture; the result are not good. If it forcast, you land in the first box of the relative humidity profile. Only, 13.3% of times you actually land into the right box and the rest of the time you will land into the rest of the box. IF you are going to link the numerical prediction model to the relative humidity profiles to predict the boundry clouds. Then, we have to deal with the fact that the above prediction system has lots of the error in it.
 
-So, we recalibrate it to give us the real probability distribution. This turns out to  
+So, we recalibrate it to give us the real probability distribution. Rather than taking the forcasting literraly true, we take it as a signal and recalibrate it.    
 
+![19](Picturs/pic_19.png)
 
+![20](Picturs/pic_20.png)
 
+The solid line shows the sequence of the decisions. At the first days, you are more conservative and there are more days left. Then, you see there are a lot of flight left and you start dropping the probabilities and having the flight on risky days. At the end, you have budget left and you start burnning it. 
 
+![21](Picturs/pic_21.png)
+
+![22](Picturs/pic_22.png)
 
