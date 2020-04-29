@@ -163,6 +163,56 @@ Solve via backward induction.
  
 Right bottom circle is the end of the season. At that time, we would be out of the season and out of the flight. Therefore, the expected flight for rest of the season would be zero. In addition, for all of the bottom circles, the expected value again would be zero. On the circle corresponding one day left and one flight left, the expected value would be 28. What would be the value of being at the circle corresponding to two days left and one flight left? We know there are two ways to reach to the end of the season. We will choose to go for one day left and no fligt if its likelihood is bigger than 0.28. 
 
+Suppose an optimal decision rule $a(d, f | s)$ has been found. 
+
+Let $V(d, f)$ denote the expected number of successes that would be realized from repeated application of this rule, starting from initial conditions $<d, f>$. 
+
+By construction, $V(\cdot)$ equals the maximand of the decision-maker's objective function, beginning from these initial conditions, under the substitution $a = a(d, f | s)$:
+
+$$V(d,f) = E^{\pi} \left[ \sum_{i = d,\ldots, 1} a(i,f_i | s_i) \cdot X_i \right]$$
+where the expectation is taken over the probability distribution of all possible sequences of forecast signals (determined by $\pi$), and where $f_i$ denotes the number of flights remaining on date $i$ when the optimal program is followed.
+
+
+$V(d,f)$ called the *value function* for this problem.
+
+Because $a(\cdot)$ is assumed to be optimal, $V(\cdot)$ must satisfy a particular recursive relationship:
+$$ V(d,f) = E^{\pi} \left[ a^*_d \cdot X_d  + V(d-1, f- a^*_d) \right]$$
+where $a^*_d = a(d,f | s_d)$ is the optimal decision.
+
+
+Once the forecast signal $s_d$ is received, $a^*$ will be chosen optimally:
+
+  * If $a^* = 1$, then $V(d,f | s_d) = E \left[X_d | s_d \right]  + V(d-1, f- 1)$.
+  * If $a^* = 0$, then $V(d,f | s_d) = V(d-1, f)$.
+
+Since $V(\cdot)$ is by construction a maximum, we must have:
+$$V(d,f | s_d) = \max \{ E \left[ X_d | s_d \right]  + V(d-1, f- 1), V(d-1, f) \}$$
+               
+$=  \max \{ p(s_d) + V(d-1, f- 1), V(d-1, f) \}$
+               
+
+
+This formula implies the optimal decision rule: $a^* = 1$ ("fly") only if
+
+$$ p(s_d) \geq V(d-1, f) -V(d-1, f- 1)$$
+i.e., when the expected payoff of the current day's opportunity exceeds the loss in marginal cost associated with arriving tomorrow with one fewer flight in the bank.
+
+Call $p(s_d)$ the *hurdle probability*.
+
+
+![17](Picturs/pic_17.png)
+
+Think of you look at the specific location of the sky. As you look up and go higher, the atmosphere pressure reduces. The scientists instead of the measuring the hights in terms of the meters, they measured the hight in terms of the millibars. They were investigating what is going on at each different pressure level as you go up to the atmosphere. The basic idea is, the atmosphere pressure of the sea level is 1000 millibars. What you are interesting in when you are thinking about forcasting boundries of clouds is about how reletive humidity is changing with pressure. It is not strict linear relationship between them. What you do is you would take lots of the snapshots of the atmosphere which differ according to reletive humidity profile. AS you go up to the atmosphere how much the reletive humidity is. You will take them and put them in unsupervised machin learning algorithm (clustering). The formula for distance is the euclidean distance between these graphs. The algorithm cluster them into 24 groups. The number above each box shows the information about the existing of the boundry clouds. In our historic data set, every time the relative humidity profile end into the first box, 56 percent of them are associated with the presence of the boundry clouds. These things do create that differentiation. We create the differentiation and then each of these classes tell us something informative about the phenomenon role which we are interseted in. 
+
+![18](Picturs/pic_18.png)
+
+These forcast are not perfect. 
+
+We got the American prediction model and it will predict for us, reletive humidity at different pressure level. It will give us the prediction of what tomorrow bring and we can put it in one of the boxes. Now we we want to know how good the American prediction system is even if we predict the right box. We got the result which is shown in the above picture; the result are not good. If it forcast, you land in the first box of the relative humidity profile. Only, 13.3% of times you actually land into the right box and the rest of the time you will land into the rest of the box. IF you are going to link the numerical prediction model to the relative humidity profiles to predict the boundry clouds. Then, we have to deal with the fact that the above prediction system has lots of the error in it.
+
+So, we recalibrate it to give us the real probability distribution. This turns out to  
+
+
 
 
 
