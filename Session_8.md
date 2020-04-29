@@ -200,11 +200,11 @@ i.e., when the expected payoff of the current day's opportunity exceeds the loss
 Call $p(s_d)$ the *hurdle probability*.
 
 
-![17](Picturs/pic_17.png)
+![17](Picturs/pic_17.PNG)
 
 Think of you look at the specific location of the sky. As you look up and go higher, the atmosphere pressure reduces. The scientists instead of the measuring the hights in terms of the meters, they measured the hight in terms of the millibars. They were investigating what is going on at each different pressure level as you go up to the atmosphere. The basic idea is, the atmosphere pressure of the sea level is 1000 millibars. What you are interesting in when you are thinking about forcasting boundries of clouds is about how reletive humidity is changing with pressure. It is not strict linear relationship between them. What you do is you would take lots of the snapshots of the atmosphere which differ according to reletive humidity profile. AS you go up to the atmosphere how much the reletive humidity is. You will take them and put them in unsupervised machin learning algorithm (clustering). The formula for distance is the euclidean distance between these graphs. The algorithm cluster them into 24 groups. The number above each box shows the information about the existing of the boundry clouds. In our historic data set, every time the relative humidity profile end into the first box, 56 percent of them are associated with the presence of the boundry clouds. These things do create that differentiation. We create the differentiation and then each of these classes tell us something informative about the phenomenon role which we are interseted in. 
 
-![18](Picturs/pic_18.png)
+![18](Picturs/pic_18.PNG)
 
 These forcast are not perfect. 
 
@@ -212,9 +212,9 @@ We got the American prediction model and it will predict for us, reletive humidi
 
 So, we recalibrate it to give us the real probability distribution. Rather than taking the forcasting literraly true, we take it as a signal and recalibrate it.    
 
-![19](Picturs/pic_19.png)
+![19](Picturs/pic_19.PNG)
 
-![20](Picturs/pic_20.png)
+![20](Picturs/pic_20.PNG)
 
 The solid line shows the sequence of the decisions. At the first days, you are more conservative and there are more days left. Then, you see there are a lot of flight left and you start dropping the probabilities and having the flight on risky days. At the end, you have budget left and you start burnning it. 
 
