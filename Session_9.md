@@ -29,6 +29,20 @@ $p(x=1|SOM=1)=p(x=1)=\beta$
 
 THe unconditional probability is equal to average frequency throughout the year of getting boundry cloud.
 
+pic 27
+
+Now we are going to use this framework for pre-season planning. So, you can predict before starting the field season in expectation at the end of the field season how many successful flights you are ging to have. If you follow the rules, you can expect that a the end of the field season. V(160,68) is going to be our expected pay off if you behave optimally. 
+
+If you start from point (D=160, F=68), you know what the probability distribution is over the likelihood outcome. If the number of the flight decrease by one, you can still say what will be the probability distribution over the outcomes at the end of the season. Consider there is cost for flight and cost for the day in the season. 
+
+$C(F)=C_{F}$
+
+$C(F)=C_{D}$
+
+$C_{T}=C_{F}+C_{D}$
+
+Based on them, we want to maximize the expected pay off under constraints of budget.
+
 
 
 
