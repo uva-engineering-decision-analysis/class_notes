@@ -17,3 +17,4 @@ pic 25
 The above picture is dealing with the second type of the error. If you forcast the certain type of the reletive humidity profile, how good is that forcast? Conditional on predicting that we end up the first state, what is the likelihood that we actually end up the first state? As it is shown in the picture is is equal to 13.3%. If our forcasting system is perfect, then this number will be equal to 100%. If it is completely useles, the numbers for all states wil be the same. There is no discrimination between them.  
  
  
+ 
