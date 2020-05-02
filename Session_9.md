@@ -13,4 +13,27 @@ What goes into the this graph is not a raw data. It is actually the output of th
 
 pic 25
 
-The above picture is dealing with the second type of the error. If you forcast the certain type of the reletive humidity profile, how good is that forcast? Conditional on predicting that we end up the first state, what is the likelihood that we actually end up the first state? As it is shown in the picture is is equal to 13.3%. If our forcasting system is perfect, then this number will be equal to 100%. If it is completely useles, the numbers for all states wil be the same. There is no discrimination between them.  
+The above picture is dealing with the second type of the error. If you forcast the certain type of the reletive humidity profile, how good is that forcast? Conditional on predicting that we end up the first state, what is the likelihood that we actually end up the first state? As it is shown in the picture is is equal to 13.3%. If our forcasting system is perfect, then this number will be equal to 100%. If it is completely useles, the numbers for all states wil be the same. There is no discrimination between them. 
+
+Then we put both kind of the uncertainty together. FIgure 2 is mapping from the reallity to what we care about. The below graph is the mapping from the forcast to what we care about.
+
+pic 26
+
+If the model forcasts that we will end up the first state of the atmosphere. Then, 44% of time, we will get the boundry clouds. So, we still here have discrimination. The numbers above each plot shows the probability of getting boundry clouds conditional on the forcast telling us the relative humidity profile looking kind of like them. 
+
+p(x=1|SOM=1)=0.44
+
+IF the graph is completely uninformative graph, then:
+
+$p(x=1|SOM=1)=p(x=1)=\beta$
+
+THe unconditional probability is equal to average frequency throughout the year of getting boundry cloud.
+
+
+
+
+
+
+
+
+
