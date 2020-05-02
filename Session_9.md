@@ -31,7 +31,7 @@ $p(x=1|SOM=1)=p(x=1)=\beta$
 
 THe unconditional probability is equal to average frequency throughout the year of getting boundry cloud.
 
-![27](Picturs/pic_27.png)
+![27](Picturs/pic_27.PNG)
 
 Now we are going to use this framework for pre-season planning. So, you can predict before starting the field season in expectation at the end of the field season how many successful flights you are ging to have. If you follow the rules, you can expect that a the end of the field season. V(160,68) is going to be our expected pay off if you behave optimally. 
 
@@ -45,7 +45,7 @@ $C_{T}=C_{F}F+C_{D}D$
 
 Based on them, we want to maximize the expected pay off under constraints of budget.
 
-![28](Picturs/pic_28.png)
+![28](Picturs/pic_28.PNG)
 
 
 The x-axis is the set of the combinations of initial days in the field season.  the y-axis is the number of the flights in the budget.  IF we have 100 days and 68 flights we will have the corresponding point on the curve $U_{1}$. You can have the same expected value by adding more days and reducing the number of flights, because all of the points on the curve $U_{1}$ have the same expected value. 
@@ -54,7 +54,7 @@ Suppose given the prices, any combination on left side of the line which cross t
 
 The verification of your result is critical. What you really want to know is how much value your framework added. You should measure the value which is added quite vigorously. In this problem we do not have the vigorous way for measuring, because we can not know what would have happen without our predictive method. In this case for analytic purpose we have a beneficial situation that we do know, because the predictive model did not be used. Therefore, for that one field season we actually know what they did without the predictive model and we can use that result for comparison. 
 
-![29](Picturs/pic_29.png)
+![29](Picturs/pic_29.PNG)
 
 ### Bayesian method
 
@@ -78,6 +78,6 @@ For y=1,...,20,$Pr(Y=y)=?$
 
 Y follows the  multi binomial distribution. 
 
-![30](Picturs/pic_30.png)
+![30](Picturs/pic_30.PNG)
 
 
