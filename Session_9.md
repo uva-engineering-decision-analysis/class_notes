@@ -52,6 +52,14 @@ Suppose given the prices, any combination on left side of the line which cross t
 
 pic 28
 
+The verification of your result is critical. What you really want to know is how much value your framework added. You should measure the value which is added quite vigorously. In this problem we do not have the vigorous way for measuring, because we can not know what would have happen without our predictive method. In this case for analytic purpose we have a beneficial situation that we do know, because the predictive model did not be used. Therefore, for that one field season we actually know what they did without the predictive model and we can use that result for comparison. 
+
+pic 29
+
+## Bayesian method
+
+This is one of the ways which is used in the dicision making process. This approach used in sittuation where there is not enough data or in the rare event. It is statistical model which is trained on the data. I is used in the situations where we have limitted amount of data and we do not want to overrely on the data, because you recognize this is the small sample and it may not really reflect what is really going on. 
+
 
 
 
