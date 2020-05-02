@@ -35,13 +35,22 @@ Now we are going to use this framework for pre-season planning. So, you can pred
 
 If you start from point (D=160, F=68), you know what the probability distribution is over the likelihood outcome. If the number of the flight decrease by one, you can still say what will be the probability distribution over the outcomes at the end of the season. Consider there is cost for flight and cost for the day in the season. 
 
-$C(F)=C_{F}$
+$C(F)=C_{F}F$
 
-$C(F)=C_{D}$
+$C(F)=C_{D}D$
 
-$C_{T}=C_{F}+C_{D}$
+$C_{T}=C_{F}F+C_{D}D$
 
 Based on them, we want to maximize the expected pay off under constraints of budget.
+
+pic 28
+
+
+The x-axis is the set of the combinations of initial days in the field season.  the y-axis is the number of the flights in the budget.  IF we have 100 days and 68 flights we will have the corresponding point on the curve $U_{1}$. You can have the same expected value by adding more days and reducing the number of flights, because all of the points on the curve $U_{1}$ have the same expected value. 
+
+Suppose given the prices, any combination on left side of the line which cross the curves is affordable. The points on the line has the cost equal to $C_{T}=C_{F}F+C_{D}D$. I want here as much data as possible in expectation and I want to give $C_{T}$ money. The graph tells me how much data should I expect at the end of the season for any combination of the day and flight. I want to maximize the expected data subject to constrain on total cost of the field season. As was mentioaned, any combination on the left side of the line is affordable given the budget. Which combination would give me the most possible data? You should look for the highest curve  U which the line cross. In other words, you should want to get the highest curve that you can while staying within the budget constraint. This point is located on the curve $U_{3}$. This point give us the most data expectation subject to the budget constraint.
+
+pic 28
 
 
 
