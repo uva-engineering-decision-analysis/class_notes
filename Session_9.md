@@ -8,6 +8,8 @@
  
  Pic 14
  
- How they got the probability distrbution? There are many varibles that scientists can measure but they must worke on relevant variables which here is the reletive humidity.
+How they got the probability distrbution? There are many varibles that scientists can measure but they must worke on relevant variables which here is the reletive humidity. There were too many reletive humidity types but we use methodes to clusster them into 24 profils. It is called dimensionality reduction. given we have a relative humidity plot and we want to check to which one of the profiles it is match. To do this, we use the euclidean distance. Then the percentage above the corresponding reletive humidity profile shows what percentage of of the plotes which is placed in this profile featured the boundry clouds.  
+ 
+ 
  
  
