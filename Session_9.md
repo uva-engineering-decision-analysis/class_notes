@@ -1,3 +1,5 @@
+# Session 9:
+
 Given we have a dicision problem and a predictive tool that helps us to discriminate between different cases. Each decision maker has a menue of the options and the values that the predictive tool has is allow you to discriminate among cases. So, you can deliver the rigt introduction for that case. We also have the theme about handling the uncertainty. We want the forcast information to include information about uncertainty. The way to do this is to present a forcast as a probability distribution over the state relevant variance. So, we saw in order to get that kind of information, we had to create a specialize post processor that would convert the output of the predictive model into probability distributions over the relavant state variables. You may get some pprediction in your case, but the form of thse prediction my not be expressed in terms of the probabilities of the decision making variables. Therefore, in this case you are going to have to construct that postprocessing tool. There are various tools to do forcasting and so on for us and how to translate those into the probability distribution for the particular variable that the decision maker care about it is going to be an aplication specific endeavore.  
 
  Pic 23
@@ -56,15 +58,28 @@ The verification of your result is critical. What you really want to know is how
 
 pic 29
 
-## Bayesian method
+### Bayesian method
 
 This is one of the ways which is used in the dicision making process. This approach used in sittuation where there is not enough data or in the rare event. It is statistical model which is trained on the data. I is used in the situations where we have limitted amount of data and we do not want to overrely on the data, because you recognize this is the small sample and it may not really reflect what is really going on. 
 
+you want to estimate the fraction of a population that is infected with some disease.
 
+Suppose $x_{1}, ... , x_{20}=0,1,iid, \sim Bernoulli (\theta)$
 
+You want to estimate the value of the $\theta$
 
+Prevalence of the infection in the general population
 
+Test a randome sample of $20$ from the population. 
 
+$Y= \sigma x_{1}+ ... +x_{20}$ 
 
+For each i=1,...,20,$Pr(x_{i}=1)=\theta$
+
+For y=1,...,20,$Pr(Y=y)=?$
+
+Y follows the  multi binomial distribution. 
+
+pic 29
 
 
