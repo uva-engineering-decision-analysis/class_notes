@@ -13,7 +13,7 @@ How they got the probability distrbution? There are many varibles that scientist
 
 What goes into the this graph is not a raw data. It is actually the output of the numerical weather prediction model.Here, the problem is the forcasting model has the error. We have a couple of different errors that we have to deal with. We have eror that given the reletive humidity profiles, we got the imperfect of weather or not we are going to get the boundry level clouds. Then, given the forcast of the future atmosphere condition is also imperfect. So, we have to deal with both types of errors. 
 
-![25](Picturs/pic_25.png)
+![25](Picturs/Pic_25.png)
 
 The above picture is dealing with the second type of the error. If you forcast the certain type of the reletive humidity profile, how good is that forcast? Conditional on predicting that we end up the first state, what is the likelihood that we actually end up the first state? As it is shown in the picture is is equal to 13.3%. If our forcasting system is perfect, then this number will be equal to 100%. If it is completely useles, the numbers for all states wil be the same. There is no discrimination between them. 
 
