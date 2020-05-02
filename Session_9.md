@@ -6,20 +6,20 @@ Given we have a dicision problem and a predictive tool that helps us to discrimi
 
  In the previous example, the forcaster delivered the high quality information about the wrong variable. The variable that is not the one that the decision maker really cared about. Whta the decistion maker cared about was the distribution of the probability, the probability of the exceeding different threshold. Then, that gap in the graph led to the flooding the town.
 
-![24](Picturs/pic_24.png)
+![24](Picturs/Pic_24.PNG)
 
 How they got the probability distrbution? There are many varibles that scientists can measure but they must worke on relevant variables which here is the reletive humidity. There were too many reletive humidity types but we use methodes to clusster them into 24 profils. It is called dimensionality reduction. given we have a relative humidity plot and we want to check to which one of the profiles it is match. To do this, we use the euclidean distance. Then the percentage above the corresponding reletive humidity profile shows what percentage of of the plotes which is placed in this profile featured the boundry clouds. Here, we did get a discrimination, we get 24 fdifferent types. If we have the same number above all of the profiles, it is a failure. It does not matter in which boxes your graph is located, you will get the same probability of getting the boundry clouds. Therefore this mapping does not give you the discrimination which is the whole point of your predictive tool. The goal of your predictive tool is to discriminate between different cases in the decision relavent way.  We have different numbers, therefore, we clearly have discimination between them that is relevent to the reaction that we care about. If you have the perfect discriminator, it would be great.
 How they got the probability distrbution? There are many varibles that scientists can measure but they must worke on relevant variables which here is the reletive humidity. There were too many reletive humidity types but we use methodes to clusster them into 24 profils. It is called dimensionality reduction. given we have a relative humidity plot and we want to check to which one of the profiles it is match. To do this, we use the euclidean distance. Then the percentage above the corresponding reletive humidity profile shows what percentage of of the plotes which is placed in this profile featured the boundry clouds. For example the number above the first profile (56%) shows that fifty six percent of the plots which match the first profile feature the boundry cloud.
 
 What goes into the this graph is not a raw data. It is actually the output of the numerical weather prediction model.Here, the problem is the forcasting model has the error. We have a couple of different errors that we have to deal with. We have eror that given the reletive humidity profiles, we got the imperfect of weather or not we are going to get the boundry level clouds. Then, given the forcast of the future atmosphere condition is also imperfect. So, we have to deal with both types of errors. 
 
-![25](Picturs/Pic_25.png)
+![25](Picturs/Pic_25.PNG)
 
 The above picture is dealing with the second type of the error. If you forcast the certain type of the reletive humidity profile, how good is that forcast? Conditional on predicting that we end up the first state, what is the likelihood that we actually end up the first state? As it is shown in the picture is is equal to 13.3%. If our forcasting system is perfect, then this number will be equal to 100%. If it is completely useles, the numbers for all states wil be the same. There is no discrimination between them. 
 
 Then we put both kind of the uncertainty together. FIgure 2 is mapping from the reallity to what we care about. The below graph is the mapping from the forcast to what we care about.
 
-![26](Picturs/pic_26.png)
+![26](Picturs/pic_26.PNG)
 
 If the model forcasts that we will end up the first state of the atmosphere. Then, 44% of time, we will get the boundry clouds. So, we still here have discrimination. The numbers above each plot shows the probability of getting boundry clouds conditional on the forcast telling us the relative humidity profile looking kind of like them. 
 
