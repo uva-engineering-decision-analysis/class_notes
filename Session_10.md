@@ -42,3 +42,37 @@ Represent this knowledge by means of a *prior distribution* $\pi(\theta)$ over $
 Obviously, there are many (infinitely many) possible such distributions. 
 
 For convenience, we typically choose to model priors as chosen from a parametrized family of distributions.
+
+### The Beta distribution
+
+$$\theta \sim \text{beta}(a,b)$$
+
+For our case, let's suppose our prior beliefs correspond to:
+
+$$\theta \sim \text{beta}(2,20)$$
+
+
+### Bayes Theorem
+
+Let $\pi(\theta | y)$ denote our *posterior distribution* over values of $\theta$.
+
+This means: our *updated* beliefs about the likelihood that $\theta$ takes various values, *after* we've received our test results.
+
+Bayes Theorem says:
+
+$$\pi(\theta | y) = \frac{l(y|\theta) \pi(\theta)}{Pr\{Y = y\}} 
+                  = \frac{l(y|\theta) \pi(\theta)}{\int_\Theta l(y|\tilde{\theta})\pi(\tilde{\theta}) d\tilde{\theta}}$$
+
+### 
+
+Can be shown: 
+
+If $\theta \sim \text{beta}(2,20)$ and $Y = 0$, then $\theta | y \sim \text{beta}(2,40)$.
+
+More generally:
+
+If $\theta \sim \text{beta}(a,b)$ and $Y = y$, then $\theta | y \sim \text{beta}(a+y,b+20-y)$.
+
+
+
+
