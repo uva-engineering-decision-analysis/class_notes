@@ -73,6 +73,6 @@ More generally:
 
 If $\theta \sim \text{beta}(a,b)$ and $Y = y$, then $\theta | y \sim \text{beta}(a+y,b+20-y)$.
 
-
+ 
 
 
