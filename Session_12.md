@@ -28,5 +28,17 @@ Based on the loss function which action should be chosen?
 
 $\hat{L}=\frac{\sum_{i=1}^{n} (a_{1},y_{i})}{n}$
 
+Define events:
+
+$E_{1}={y|y_{n+1}	\le y_{int}}$   $a^{*}=a_{1}$    
+
+$E_{2}={y|y_{n+1}\gey_{int}}$     $a^{*}=a_{2}$  
+
+Want $Pr{E_{1}}=Pr{y	\le y_{int}}=\frac{\frac{1}{n}}{\sum_{y	\le y_{int}(1)}$
+
+
+
+
+
 
 
