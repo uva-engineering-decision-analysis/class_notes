@@ -126,7 +126,7 @@ If you have very weak strong prior beliefs, your posterir mean is going to be ab
 
 Consider you find out the distribution of the $\theta$ given the sample expectation, now you want to figure out what is the likelihood of getting a different value for the next.
 
-![36](Picturs/pic_36.png)
+![37](Picturs/pic_37.png)
 
 In order to the prediction to be usefule, it cannot depend on anything unobserved. When you get the probability for the prediction you have to get rid of all of the unobserved parameters.
 
