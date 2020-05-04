@@ -26,7 +26,7 @@ Some times the pey off is not symmetric. If the tempreture is high, the loss is 
 
 Based on the loss function which action should be chosen?
 
-$\hat{L}=\frac{\sum_{i=1}^{n} (a_{1},y_{i})}{n}$
+$\hat{L_{emp}}=\frac{\sum_{i=1}^{n} (a_{1},y_{i})}{n}$
 
 Define events:
 
@@ -36,9 +36,10 @@ $E_{2}={y|y_{n+1}\gey_{int}}$     $a^{*}=a_{2}$
 
 Want $Pr{E_{1}}=Pr{y	\le y_{int}}=\frac{\frac{1}{n}}{\sum_{y	\le y_{int}(1)}=p_{1}$ Estimate of Pr($E_{1}$)
 
-Proposal:
+If $\hat{L_{emp}} \ge c_{2}, then $a^{*}=a_{2}$
 
-Choose actioan $a_{2}$ iff $P_{1}\ge0.5#
+
+Given you have a hundered of the historical data and you are pretty confident about the loss function estimation. Now consider you have 6 of the historical data. 
 
 
 
