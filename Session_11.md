@@ -122,7 +122,7 @@ If you have very weak strong prior beliefs, your posterir mean is going to be ab
 
 ## Building a predictive model
 
-![36](Picturs/pic_36.png)
+![36](Picturs/pic_36.PNG)
 
 Consider you find out the distribution of the $\theta$ given the sample expectation, now you want to figure out what is the likelihood of getting a different value for the next.
 
