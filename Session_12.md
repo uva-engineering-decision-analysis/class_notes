@@ -1,1 +1,34 @@
+Session 12
+
+Suppose we have two possible actions $a \in {a_{1},a_{2}}$ and we want to predict the weather temperature $y_{n+1}$ and based on that we want to decide about the two following action. 
+
+The pay of is only depends on the true value of some $L(a,y_{n+1})$
+
+$a_{1}$: you do not buy extra cooling and you risk it
+
+$a_{2}$: you buy the extra cooling 
+
+
+
+
+
+
+Historical data on $y=y_{1},y_{2},...,y_{n}$. This is the history of the temperature in this example.
+
+We want:
+
+* probabilistic forcast of $y_{n+1}$
+
+* use prediction to choose optimal $a^{*}$
+
+What to do?
+
+We want the probabilistic forcast, we want to know the distribution probability for $y_{n+1}$. 
+
+Some times the pey off is not symmetric. If the tempreture is high, the loss is high. If the temprature is low, the loss is low.
+
+
+
+
+
 
