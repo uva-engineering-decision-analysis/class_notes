@@ -1,4 +1,4 @@
-Session 12
+# Session 12
 
 Suppose we have two possible actions $a \in {a_{1},a_{2}}$ and we want to predict the weather temperature $y_{n+1}$ and based on that we want to decide about the two following action. 
 
@@ -24,8 +24,9 @@ We want the probabilistic forcast, we want to know the distribution probability 
 
 Some times the pey off is not symmetric. If the tempreture is high, the loss is high. If the temprature is low, the loss is low.
 
+Based on the loss function which action should be chosen?
 
-
+$\hat{L}=\frac{\sum_{i=1}^{n} (a_{1},y_{i})}{n}$
 
 
 
