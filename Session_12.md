@@ -8,10 +8,7 @@ $a_{1}$: you do not buy extra cooling and you risk it
 
 $a_{2}$: you buy the extra cooling 
 
-
-
-
-
+![40](Picturs/pic_40.PNG)
 
 Historical data on $y=y_{1},y_{2},...,y_{n}$. This is the history of the temperature in this example.
 
