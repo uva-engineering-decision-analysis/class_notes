@@ -34,7 +34,11 @@ $E_{1}={y|y_{n+1}	\le y_{int}}$   $a^{*}=a_{1}$
 
 $E_{2}={y|y_{n+1}\gey_{int}}$     $a^{*}=a_{2}$  
 
-Want $Pr{E_{1}}=Pr{y	\le y_{int}}=\frac{\frac{1}{n}}{\sum_{y	\le y_{int}(1)}$
+Want $Pr{E_{1}}=Pr{y	\le y_{int}}=\frac{\frac{1}{n}}{\sum_{y	\le y_{int}(1)}=p_{1}$ Estimate of Pr($E_{1}$)
+
+Proposal:
+
+Choose actioan $a_{2}$ iff $P_{1}\ge0.5#
 
 
 
