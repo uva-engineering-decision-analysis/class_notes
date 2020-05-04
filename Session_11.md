@@ -120,7 +120,12 @@ The X-axis shows the w and the Y-axis shows the prior expectation. Given the pri
 If you have less strong prior beliefs, your posterir mean is going to be about 0.16. 
 If you have very weak strong prior beliefs, your posterir mean is going to be about 0.02. 
 
-   
+## Building a predictive model
+
+![36](Picturs/pic_36.png)
+
+Consider you find out the distribution of the $\theta$ given the sample expectation, now you want to figure out what is the likelihood of getting a different value for the next.
+
 
 
 
