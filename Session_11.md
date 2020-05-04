@@ -122,9 +122,19 @@ If you have very weak strong prior beliefs, your posterir mean is going to be ab
 
 ## Building a predictive model
 
+Ex: We have a sample of 342 diabetes patients and for each of them we have observation for 64 different variables. These variabels may or may not give you the useful information. Suppose that the progress of the diabetes is the linear function along with different variables. So, each wight indicates how important is the corresponding variable. We have error process in this model which is independent and identically distributed. The error follows the standard normal distribution There is the data dependence such as the data dependence between family members who live at the same house. Most of these variables may not been useful and relevant. 
+
+
+
 ![36](Picturs/pic_36.png)
 
 Consider you find out the distribution of the $\theta$ given the sample expectation, now you want to figure out what is the likelihood of getting a different value for the next.
+
+![38](Picturs/pic_38.png)
+
+![39](Picturs/pic_39.png)
+
+In the above left side graph, the predictions were plot against the observations. Here, if the model was perfect, every point will be exactly on the line. 
 
 ![37](Picturs/pic_37.png)
 
