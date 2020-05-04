@@ -128,7 +128,7 @@ Consider you find out the distribution of the $\theta$ given the sample expectat
 
 ![36](Picturs/pic_36.png)
 
-
+In order to the prediction to be usefule, it cannot depend on anything unobserved. When you get the probability for the prediction you have to get rid of all of the unobserved parameters.
 
 
 
