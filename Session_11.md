@@ -87,5 +87,43 @@ implies
 
 ![33](Picturs/pic_33.PNG)
 
+### Bayes Theorem
+
+Let $\pi(\theta | y)$ denote our *posterior distribution* over values of $\theta$.
+
+This means: our *updated* beliefs about the likelihood that $\theta$ takes various values, *after* we've received our test results.
+
+Bayes Theorem says:
+
+$$\pi(\theta | y) = \frac{l(y|\theta) \pi(\theta)}{Pr\{Y = y\}} 
+                  = \frac{l(y|\theta) \pi(\theta)}{\int_\Theta l(y|\tilde{\theta})\pi(\tilde{\theta}) d\tilde{\theta}}$$
+
+
+Can be shown: 
+
+If $\theta \sim \text{beta}(2,20)$ and $Y = 0$, then $\theta | y \sim \text{beta}(2,40)$.
+
+More generally:
+
+If $\theta \sim \text{beta}(a,b)$ and $Y = y$, then $\theta | y \sim \text{beta}(a+y,b+20-y)$.
+
+![34](Picturs/pic_34.png)
+
+The new expected value is being the weighted average of your prior expectetion and the sample mean. If w is very small, then you are putting most of your weight on your sample data, otherwise you put most of the weight on the prior expectation.
+
+
+### Sensitivity analysis
+
+![35](Picturs/pic_35.png)
+
+The X-axis shows the w and the Y-axis shows the prior expectation. Given the prior expectation is 0.5 and the number of the positive tests is equal to zero. If you have high strong prior beliefs, your posterir mean is going to be about 0.26. 
+If you have less strong prior beliefs, your posterir mean is going to be about 0.16. 
+If you have very weak strong prior beliefs, your posterir mean is going to be about 0.02. 
+
+   
+
+
+
+
 
 
