@@ -11,7 +11,7 @@ $P(A\capB)=P(A)\timesP(B)$
 
 What is the probability that the son is professional?
 
-$Pr(Y_{2}=Professional)=\sigma Pr(Y_{2}=Professional,Y_{2}=i)=0.352	\neq0.164$
+$Pr(Y_{2}=Professional)=\sum Pr(Y_{2}=Professional,Y_{2}=i)=0.352	\neq0.164$
 
 It is shown that the conditional probability is not equal to unconditional probability.
 
