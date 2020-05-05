@@ -62,6 +62,16 @@ living with some kind of mis-specificationmaight be fine depend on the applicati
 
 This is going to ask how much better your decision is going to be if you actually have a prdictive model that helps inform the decision. It might have some signal that may be is not perfect because it is only information. Then, on average how much loss you avoide compare to if you made otherwise the same decision making process but without the prdictive model. The information is valuable if it lead you  to the different decision that you whould not have mad otherwise. 
 
+IF you have a forcast, the forcast depends on the signal you may recieve. Therefore,
+
+$a^{*}=a^{*}(x)$
+
+How to use the forcast?
+
+Method:
+
+$y_{i}=\beta_{0}$
+
 
 
 
