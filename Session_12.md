@@ -8,7 +8,7 @@ $a_{1}$: you do not buy extra cooling and you risk it
 
 $a_{2}$: you buy the extra cooling 
 
-![40](Picturs/pic_40.PNG)
+![40](Picturs/pic_40.png)
 
 Historical data on $y=y_{1},y_{2},...,y_{n}$. This is the history of the temperature in this example.
 
@@ -42,7 +42,7 @@ Need some model of the data generating process
 
 $y_{i}=y_{0}+	\varepsilon_{i}, 	\varepsilon_{i}\sim N(0,\sigma^{2}_{y})$
 
-![41](Picturs/pic_41.PNG)
+![41](Picturs/pic_41.png)
 
 Here, the mean and variance are unknown.  
 
@@ -62,13 +62,13 @@ mean: min_{\hat{y_{0}}}\sum(\hat{y_{0}}-y_{i})^{2}=\sum()\hat{varepsilon_{i}}^{2
 
 So, we will get the $y_{0},\sigma^{2}_{y}$
 
-![42](Picturs/pic_42.PNG)
+![42](Picturs/pic_42.png)
 
 This is the the distribution y. This  describes the probaboloty forcast over the nest value of the y. With using it we can get the probability forcast for losses.
 
 Suppose, you plot your estimated errors $\hat{varepsilon_{i}}=y_{i}-\hat{y_{0}}$
 
-![43](Picturs/pic_43.PNG)
+![43](Picturs/pic_43.png)
 
 The varianvce of the error tends to be growing. It violates the assumption of the indipendent identically distribution. This is called heterokedasticity. 
 When you work with data, you need to look at your data. 
