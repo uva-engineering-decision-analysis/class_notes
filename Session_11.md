@@ -5,7 +5,7 @@ Example: We have the population of the fathers and sons and their occupation are
 
 ![31](Picturs/pic_31.PNG)
 
-Two variables are independent if knowing one of them doen not give you information about the other one. Also, two variables are independent if the following relationship is trup between them:
+Two variables are independent if knowing one of them do not give you information about the other one. Also, two variables are independent if the following relationship is true between them:
 
 $P(A\capB)=P(A)\timesP(B)$
 
@@ -15,7 +15,7 @@ $Pr(Y_{2}=Professional)=\sum Pr(Y_{2}=Professional,Y_{2}=i)=0.352	\neq0.164$
 
 It is shown that the conditional probability is not equal to unconditional probability.
 
-THe above concept is essentially what your predictive model is going to do. You are going to go from unconditional probability to conditional probability. You are going to condition on some data you have to give the probability of some future event. There are different way to create thiese joined probability events such as machine learning and so on. But essentially what you are going to do is to built somehow the joined probability distributions between the data that yu know about (Prior knowledge) and the data you want to know about.
+The above concept is essentially what your predictive model is going to do. You are going to go from unconditional probability to conditional probability. You are going to condition on some data you have to give the probability of some future event. There are different ways to create these joined probability events such as machine learning and so on. But essentially what you are going to do is to build somehow the joined probability distributions between the data that you know about (Prior knowledge) and the data you want to know about.
 
 
 ### Bayesian methods: Introduction via simple example
@@ -44,7 +44,7 @@ $l(y|\theta)$ called the *likelihood function*.
 
 ![32](Picturs/pic_32.PNG)
 
-The above left graph is the graph of the likelihood function or the histrogram of the likelihood function for different values of data. If $\theta$ is equal to 0.05, there is a substantial probability of getting zero successful tasks out of 20 and if you get zero success out of 20 that just not tell you  the expected value for the real $\theta$ is zero. 
+The above left graph is the graph of the likelihood function or the histogram of the likelihood function for different values of data. If $\theta$ is equal to 0.05, there is a substantial probability of getting zero successful tasks out of 20 and if you get zero success out of 20 that just not tell you the expected value for the real $\theta$ is zero. 
 
 
 Idea: For any $0< \theta < 1$, all values of $Y$ are *possible*, but some are more likely than others. 
@@ -109,20 +109,20 @@ If $\theta \sim \text{beta}(a,b)$ and $Y = y$, then $\theta | y \sim \text{beta}
 
 ![34](Picturs/pic_34.png)
 
-The new expected value is being the weighted average of your prior expectetion and the sample mean. If w is very small, then you are putting most of your weight on your sample data, otherwise you put most of the weight on the prior expectation.
+The new expected value is being the weighted average of your prior expectation and the sample mean. If w is very small, then you are putting most of your weight on your sample data, otherwise you put most of the weight on the prior expectation.
 
 
 ### Sensitivity analysis
 
 ![35](Picturs/pic_35.png)
 
-The X-axis shows the w and the Y-axis shows the prior expectation. Given the prior expectation is 0.5 and the number of the positive tests is equal to zero. If you have high strong prior beliefs, your posterir mean is going to be about 0.26. 
-If you have less strong prior beliefs, your posterir mean is going to be about 0.16. 
-If you have very weak strong prior beliefs, your posterir mean is going to be about 0.02. 
+The X-axis shows the w and the Y-axis shows the prior expectation. Given the prior expectation is 0.5 and the number of the positive tests is equal to zero. If you have high strong prior beliefs, your posterior mean is going to be about 0.26. 
+If you have less strong prior beliefs, your posterior mean is going to be about 0.16. 
+If you have very weak strong prior beliefs, your posterior mean is going to be about 0.02. 
 
 ## Building a predictive model
 
-Ex: We have a sample of 342 diabetes patients and for each of them we have observation for 64 different variables. These variabels may or may not give you the useful information. Suppose that the progress of the diabetes is the linear function along with different variables. So, each wight indicates how important is the corresponding variable. We have error process in this model which is independent and identically distributed. The error follows the standard normal distribution There is the data dependence such as the data dependence between family members who live at the same house. Most of these variables may not been useful and relevant. 
+Ex: We have a sample of 342 diabetes patients and for each of them we have observation for 64 different variables. These variables may or may not give you the useful information. Suppose that the progress of the diabetes is the linear function along with different variables. So, each wight indicates how important is the corresponding variable. We have error process in this model which is independent and identically distributed. The error follows the standard normal distribution There is the data dependence such as the data dependence between family members who live at the same house. Most of these variables may not been useful and relevant. 
 
 
 
@@ -138,7 +138,7 @@ In the above left side graph, the predictions were plot against the observations
 
 ![37](Picturs/pic_37.png)
 
-In order to the prediction to be usefule, it cannot depend on anything unobserved. When you get the probability for the prediction you have to get rid of all of the unobserved parameters.
+In order to the prediction to be useful, it cannot depend on anything unobserved. When you get the probability for the prediction you have to get rid of all of the unobserved parameters.
 
 
 
