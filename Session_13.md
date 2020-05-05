@@ -68,8 +68,15 @@ This model asserts several substantive assumptions about the data generating pro
   
   * Temperature variations around the long-run average are assumed to be *identically distributed*. This assumption rules out the possibility that variance is, say, greater when temperatures are higher than when they are lower.
   
-And others.
+![43](Picturs/pic_43.png)
+In the above graph, this above assuption is not supportive. You are understimatting the risk of avery high temperature. Systematically, you are understimating the probability of the very latge loss. It will lead to the wrong recommendation.
   
+And others.
+
+![44](Picturs/pic_44.png)
+
+This graph shows that for each amount of the loss what is the probbability of getting that amount of the damage of loss. It is the summery picture of tail risk. It is not the probability of each level, it is the probability of exceeding any given total loss level.
+
 In general, it is important to formulate a statistical model that accurately reflects the true characteristics of the underlying data generating process.
 
 When your statistical model is mis-specified, your probabilistic forecast of future events are likely to stray from the true underlying probabilities. Model mis-specification can then lead to inaccurate estimates of the distribution of losses for each possible action. This error may in turn lead to selection of a sub-optimal action.
@@ -87,4 +94,5 @@ If you find evidence that your prediction model is mis-specified, it may be wort
 One very good idea is to perform a *sensitivity analysis*. How sensitive are your decision recommendations and outcomes to the assumptions you've built into your statistical model? If you are not highly confident in your statistical assumptions, and if those assumptions turn out to matter a lot for your recommendations and outcomes, then it could very well be worth the bother to revisit those assumptions, and investigate alternatives.
 
 On the other hand, if your decision recommendations are not highly sensitive to your statistical assumptions, then keeping your initial model may be defensible. The point of this work is *not* to build the best possible prediction system, bullet-proof against any statistical criticism. The point is to help people make good decisions -- or at least, decisiions better than they would have made otherwise. Your time and other resources are limited. A good-enough model may be good enough.
+
 
