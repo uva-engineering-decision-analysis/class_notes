@@ -129,14 +129,16 @@ Why do we use the square of the errors? It emphasize the big errors. Big errors 
 
 Other option is to minimize the absokute value of the errors. It depends on your problem, to choose one of these options. 
 
-1- min MSE: $\sqrt{\sum|\varepsilon^{2}_{i}}$
+1- min MSE: $\sqrt{\sum|\varepsilon^{2}_{i}}$    $L^{2}$
 
-2- min MAE: $\sum|\varepsilon_{i}|$
+2- min MAE: $\sum|\varepsilon_{i}|$              $L^{1}$
 
-The second option is less sensitive to the big errors.
+The second option is less sensitive to the big errors. It cares about the total amount of the error while the first want put more weight for the biggest error.
 
 
+The following equation shows a measurment for measuring the error and $\alpha$ can take different values and if the $\alpha$ is equal to $\infinity$, it means we care about only the biggest error. We want to minimize only the biggest error.
 
+$(\sum|\varepsilon^{\alpha}_{i})^{\frac{1}{\alpha}}$          $L^{\alpha}$
 
 
 
