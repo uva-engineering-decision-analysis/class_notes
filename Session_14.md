@@ -70,17 +70,32 @@ How to use the forcast?
 
 Method:
 
-$y_{i}=\beta_{0}+\beta_{1}x_{i}+u_{i}$   $u_{i}\sim N(0, \gamma)$ i.i.d
+$y_{i}=\beta_{0}+\beta_{1}x_{i}+u_{i}$   $u_{i}\sim N(0, \gamma^{2})$ i.i.d
 
 Use OLS (or your preferred tecjnique) to estimate parameters
 
 
 You can use the maximum likelihood here, too. It will give you the biase estimator that has smaller variance.
 
+estimate \hat{\beta_{0}},\hat{\beta_{1}}, \hat{\gamma^{2}}
 
+Generate the predictive distribution of Y|X. 
 
+Suppose we make the best linear fit. Then, we have now condition information for the given y's and therefore with some estimate of distribution, you can map that distribution to the distribution of the losses.  The loss distribution will have the heavy weight on zero and then increasingly less and less weight on higher levels of loss. If there is minimum threshold, all of the values before the threshold in the first graph (normal distribution) will map to losse equal to zero and above that they all map to higher and higher losses but with less and less probability. here, we do not have any forcasting information. 
 
+![55](Picturs/pic_55.png)
 
+But the idea here is instead you got the forcast, so then you can for some given x value, the distribution of the Y|x is much sharper. Then, you can map that conditional distribution. The conditional distribution will have again heavy weight on zero but much sharper estimate compare to the previous graph. 
+
+![56](Picturs/pic_56.png)
+
+Then given the above distribution of losse, 
+
+E[L(Y|X)]=E.L.(x)
+
+For any given x,
+
+Let $a^{*}=argmin {E.L.(x),C_{0}}$
 
 
 
