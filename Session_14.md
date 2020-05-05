@@ -5,7 +5,7 @@ In the example which was presented in the previous session, suppose we have hist
 Suppose we know the tru average and standard deviasion. Suppose we have 20 historical data points. 
 It is limitted data.
 
-![49](Picturs/pic_49.png)
+![49](Picturs/pic_49.PNG)
 
 ![50](Picturs/pic_50.PNG)
 
@@ -16,17 +16,17 @@ In the above graph, you might think that the estimted average is higher than the
 
 The estimated average and standard deviasion are quite higher than the actual ones. 
 
-![52](Picturs/pic_52.png)
+![52](Picturs/pic_52.PNG)
 
 In this case, the decision maker who rely on this model is  actually overestimating the risk.
 
 Suppose you have a forcasting system,
 
-![53](Picturs/pic_53.png)
+![53](Picturs/pic_53.PNG)
 
 Instead of relying on historical data, suppose that we have forcasting system. Also, suppose the system is bias and it tends to be low.
 
-![54](Picturs/pic_54.png)
+![54](Picturs/pic_54.PNG)
 
 It is linear regression that looks at focast against the observations.
 
@@ -83,11 +83,11 @@ Generate the predictive distribution of Y|X.
 
 Suppose we make the best linear fit. Then, we have now condition information for the given y's and therefore with some estimate of distribution, you can map that distribution to the distribution of the losses.  The loss distribution will have the heavy weight on zero and then increasingly less and less weight on higher levels of loss. If there is minimum threshold, all of the values before the threshold in the first graph (normal distribution) will map to losse equal to zero and above that they all map to higher and higher losses but with less and less probability. here, we do not have any forcasting information. 
 
-![55](Picturs/pic_55.png)
+![55](Picturs/pic_55.PNG)
 
 But the idea here is instead you got the forcast, so then you can for some given x value, the distribution of the Y|x is much sharper. Then, you can map that conditional distribution. The conditional distribution will have again heavy weight on zero but much sharper estimate compare to the previous graph. 
 
-![56](Picturs/pic_56.png)
+![56](Picturs/pic_56.PNG)
 
 Then given the above distribution of losse, 
 
@@ -97,7 +97,13 @@ For any given x,
 
 Let $a^{*}(x)=argmin {E.L.(x),C_{0}}$
 
-How much value does this created by refining the prediction system in this way?
+How much value does this created by refining the prediction system in this way? How you quantify that additional value?
 
+Suppose we got the forcast and when the forcast is high buy the insurance. when the forcast is low do not buy the insurance. There is a critical boundry. I know in advance which x i am going to map to which action. On the right part the expectation loss is higher than buying the insurance and the left part the expected loss is lower than buying the insurance.
+
+![57](Picturs/pic_57.PNG)
+
+
+To document how much value our method wil create we can use the historic data. We can compare the action they actually did with how well we claim that could have done. That is one way to do that. 
 
 
