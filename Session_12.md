@@ -72,7 +72,7 @@ Suppose, you plot your estimated errors $\hat{varepsilon_{i}}=y_{i}-\hat{y_{0}}$
 
 The varianvce of the error tends to be growing. It violates the assumption of the indipendent identically distribution. This is called heterokedasticity. 
 When you work with data, you need to look at your data. 
-Sometimes, the decision is not big deal and you live with this. In overal, if heterokedasticity happenes, we would have the wrong estimate of probabilities.
+In overal, if heterokedasticity happenes, we would have the wrong estimate of probabilities.
 
 
 
