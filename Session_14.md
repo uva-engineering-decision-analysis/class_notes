@@ -70,8 +70,12 @@ How to use the forcast?
 
 Method:
 
-$y_{i}=\beta_{0}$
+$y_{i}=\beta_{0}+\beta_{1}x_{i}+u_{i}$   $u_{i}\sim N(0, \gamma)$ i.i.d
 
+Use OLS (or your preferred tecjnique) to estimate parameters
+
+
+You can use the maximum likelihood here, too. It will give you the biase estimator that has smaller variance.
 
 
 
