@@ -101,9 +101,11 @@ How much value does this created by refining the prediction system in this way? 
 
 Suppose we got the forcast and when the forcast is high buy the insurance. when the forcast is low do not buy the insurance. There is a critical boundry. I know in advance which x i am going to map to which action. On the right part the expectation loss is higher than buying the insurance and the left part the expected loss is lower than buying the insurance.
 
+
 ![57](Picturs/pic_57.PNG)
 
 
 To document how much value our method wil create we can use the historic data. We can compare the action they actually did with how well we claim that could have done. That is one way to do that. 
 
+We can obtain the expectation loss over the distribution of the forcast signal x and then compare it with loss which was obtained without considering forcasting signal. In the calculating the value of the loss without considering forcasting signal, it does not depend on x. 
 
