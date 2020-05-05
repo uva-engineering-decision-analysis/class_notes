@@ -1,10 +1,10 @@
 # Session 8
 
-There is a report called "Completing the forcast". When we produce a forcast, of course, there is an error. What we can do is see if we can actually represent the error in our forcast, in a rigorous way. The weather system is a cheotic system which implies something in feature called sensitive dependence on initial conditions. IT means if you misspicify your initiale condition by just a little bit, then as you forcast over time, evenif you have the physics completely accurate, that small error in the way you specify the correct state of the system will will inevitably lead to larger errors over time. Those errors do not grow linearly with time; they explode. This error is inevitable, since you can not completely specify the state of the atmosphere. Even thoug you could do that accurately, there is not enough sensor. Let's represent our actual uncertainty about the forcasting. With different initial condition, you get different model runs comming out and then you measure the uncertainty in the forcast based on those models.
+There is a report called "Completing the forecast". When we produce a forecast, of course, there is an error. What we can do is see if we can actually represent the error in our forecast, in a rigorous way. The weather system is a chaotic system which implies something in feature called sensitive dependence on initial conditions. IT means if you mis-specify your initial condition by just a little bit, then as you forecast over time, even if you have the physics completely accurate, that small error in the way you specify the correct state of the system will inevitably lead to larger errors over time. Those errors do not grow linearly with time; they explode. This error is inevitable, since you cannot completely specify the state of the atmosphere. Even though you could do that accurately, there is not enough sensor. Let's represent our actual uncertainty about the forecasting. With different initial condition, you get different model runs coming out and then you measure the uncertainty in the forecast based on those models.
 
 ![16](Picturs/pic_16.png)
 
-There was a flood in Red River in Grand Forks in 1997. They had prepared for the flood because they were getting forcast from Natural weather servise about how high river would rise. Then, they estimated how hight the flood would go and gave the expected value. They forcasted the rivers only got up to "50 ft". Therefore, they decided to make sand bags and they thought if the hight of the sand bags were 50 ft, they would be safe. But, they did not. The forcast and the actual rising were shown in the graph. What happen was it bumped up the forcast very fast and there was not enough time left to increase the hight of the sand bags. Therefore, there were a lot of blames that the Natural weather servise did poor job. It was not actually fair, because they gave the best forcast best on the data. The problem was that expected value is not the infrmation that they needed. They needed the information about how high the sand bag should be. They did not to know the best estimation for sand bags, they needed to know what is the probability of getting higher than 50 ft, 51 ft and so on. When they had that information, they could have themselves calibrated how much risk they were willing to take. It was turn out that the Natural weather servise, they actually had that kind of theinformation but nobody ask them to produce that. They found ou that the 54 ft was within the reasonable margin of the error goven the analatics they were using. The left side graph was that kind of information thay have started to produce since that event. In this graph, the green line shows the expected value and the blue boxes show the amount of the error. 
+There was a flood in Red River in Grand Forks in 1997. They had prepared for the flood because they were getting forecast from Natural weather service about how high river would rise. Then, they estimated how height the flood would go and gave the expected value. They forecasted the rivers only got up to "50 ft". Therefore, they decided to make sand bags and they thought if the hight of the sand bags were 50 ft, they would be safe. But, they did not. The forecast and the actual rising were shown in the graph. What happen was it bumped up the forecast very fast and there was not enough time left to increase the height of the sand bags. Therefore, there were a lot of blames that the Natural weather service did poor job. It was not actually fair, because they gave the best forecast best on the data. The problem was that expected value is not the information that they needed. They needed the information about how high the sand bag should be. They did not to know the best estimation for sand bags, they needed to know what is the probability of getting higher than 50 ft, 51 ft and so on. When they had that information, they could have themselves calibrated how much risk they were willing to take. It was turn out that the Natural weather service, they actually had that kind of the information but nobody asks them to produce that. They found out that the 54 ft was within the reasonable margin of the error given the analytics they were using. The left side graph was that kind of information they have started to produce since that event. In this graph, the green line shows the expected value and the blue boxes show the amount of the error. 
 
 ### The promise: data-driven decision making
 
@@ -12,7 +12,7 @@ Data science hype: "Better information $\rightarrow$ Better decisions!"
 
 *Claim:* That's wrong. 
 
-Because, more inrrelavant information will more distract you away from the points of data you really need for that decision. 
+Because, more irrelevant information will more distract you away from the points of data you really need for that decision. 
 
 
 Data-driven decision-making also requires complementary analytics and products: 
@@ -23,9 +23,9 @@ Data-driven decision-making also requires complementary analytics and products:
  
  * *Visualization/communication* : intelligence *actionable* in terms of user's decision problem
  
-In this example: If they built the sand bags higher than the estimation it would be costly; if they built lower than thet it would be more disaster and the cos of the error is not symmetric here. The cost of the error is greter in on direction. You want the calibration of the error in the form of the probabilistic forcast. You do not want the whole distribution. You have to identify where in that distribution is relevant to the decision you want to make. Then, you do the optimization. In this case, they wil solve the risk management problem. 
+In this example: If they built the sand bags higher than the estimation it would be costly; if they built lower than that it would be more disaster and the cos of the error is not symmetric here. The cost of the error is greater in on direction. You want the calibration of the error in the form of the probabilistic forecast. You do not want the whole distribution. You have to identify where in that distribution is relevant to the decision you want to make. Then, you do the optimization. In this case, they will solve the risk management problem. 
 
-Better information does not make better decision. We need other tools to convert those better information into better decision. 
+Better information does not make better decision. We need other tools to convert that better information into better decision. 
 
 ### Realizing the promise of data-driven decision-making
 
@@ -100,7 +100,7 @@ Resource constraint: $\sum_d a_d \leq F$.
 *Payoffs*: For a given sequence of choices $\bf{a}$ and realizations $\bf{x}$, the realized amount of data collected $U$ is given by 
 $$U = \mathbf{a \cdot x} =\sum_d a_d x_d$$.
 
-*Decision-maker's objective*: Choose a fly/no-fly decision rule to maximize data collected in expection, subject to the resource constraint on total allowable flights:
+*Decision-maker's objective*: Choose a fly/no-fly decision rule to maximize data collected in expectation, subject to the resource constraint on total allowable flights:
 
 Choose $\bf{a}$ to $max_{\bf{a}} = E[\bf{a} \cdot \bf{X}]$, subject to $\sum_d a_d \leq F$.
 
@@ -167,7 +167,7 @@ Suppose an optimal decision rule $a(d, f | s)$ has been found.
 
 Let $V(d, f)$ denote the expected number of successes that would be realized from repeated application of this rule, starting from initial conditions $<d, f>$. 
 
-By construction, $V(\cdot)$ equals the maximand of the decision-maker's objective function, beginning from these initial conditions, under the substitution $a = a(d, f | s)$:
+By construction, $V(\cdot)$ equals the maximized of the decision-maker's objective function, beginning from these initial conditions, under the substitution $a = a(d, f | s)$:
 
 $$V(d,f) = E^{\pi} \left[ \sum_{i = d,\ldots, 1} a(i,f_i | s_i) \cdot X_i \right]$$
 where the expectation is taken over the probability distribution of all possible sequences of forecast signals (determined by $\pi$), and where $f_i$ denotes the number of flights remaining on date $i$ when the optimal program is followed.
@@ -202,21 +202,21 @@ Call $p(s_d)$ the *hurdle probability*.
 
 ![17](Picturs/pic_17.PNG)
 
-Think of you look at the specific location of the sky. As you look up and go higher, the atmosphere pressure reduces. The scientists instead of the measuring the hights in terms of the meters, they measured the hight in terms of the millibars. They were investigating what is going on at each different pressure level as you go up to the atmosphere. The basic idea is, the atmosphere pressure of the sea level is 1000 millibars. What you are interesting in when you are thinking about forcasting boundries of clouds is about how reletive humidity is changing with pressure. It is not strict linear relationship between them. What you do is you would take lots of the snapshots of the atmosphere which differ according to reletive humidity profile. AS you go up to the atmosphere how much the reletive humidity is. You will take them and put them in unsupervised machin learning algorithm (clustering). The formula for distance is the euclidean distance between these graphs. The algorithm cluster them into 24 groups. The number above each box shows the information about the existing of the boundry clouds. In our historic data set, every time the relative humidity profile end into the first box, 56 percent of them are associated with the presence of the boundry clouds. These things do create that differentiation. We create the differentiation and then each of these classes tell us something informative about the phenomenon role which we are interseted in. 
+Think of you look at the specific location of the sky. As you look up and go higher, the atmosphere pressure reduces. The scientists instead of the measuring the heights in terms of the meters, they measured the height in terms of the millibars. They were investigating what is going on at each different pressure level as you go up to the atmosphere. The basic idea is, the atmosphere pressure of the sea level is 1000 millibars. What you are interested in when you are thinking about forecasting boundaries of clouds is about how relative humidity is changing with pressure. It is not strict linear relationship between them. What you do is you would take lots of the snapshots of the atmosphere which differ according to relative humidity profile. AS you go up to the atmosphere how much the relative humidity is. You will take them and put them in unsupervised machine learning algorithm (clustering). The formula for distance is the Euclidean distance between these graphs. The algorithm cluster them into 24 groups. The number above each box shows the information about the existing of the boundary clouds. In our historic data set, every time the relative humidity profile end into the first box, 56 percent of them are associated with the presence of the boundary clouds. These things do create that differentiation. We create the differentiation and then each of these classes tell us something informative about the phenomenon role which we are interested in. 
 
 ![18](Picturs/pic_18.PNG)
 
 These forcast are not perfect. 
 
-We got the American prediction model and it will predict for us, reletive humidity at different pressure level. It will give us the prediction of what tomorrow bring and we can put it in one of the boxes. Now we we want to know how good the American prediction system is even if we predict the right box. We got the result which is shown in the above picture; the result are not good. If it forcast, you land in the first box of the relative humidity profile. Only, 13.3% of times you actually land into the right box and the rest of the time you will land into the rest of the box. IF you are going to link the numerical prediction model to the relative humidity profiles to predict the boundry clouds. Then, we have to deal with the fact that the above prediction system has lots of the error in it.
+We got the American prediction model and it will predict for us, relative humidity at different pressure level. It will give us the prediction of what tomorrow bring and we can put it in one of the boxes. Now we want to know how good the American prediction system is even if we predict the right box. We got the result which is shown in the above picture; the result is not good. If it forecast, you land in the first box of the relative humidity profile. Only, 13.3% of times you actually land into the right box and the rest of the time you will land into the rest of the box. IF you are going to link the numerical prediction model to the relative humidity profiles to predict the boundary clouds. Then, we have to deal with the fact that the above prediction system has lots of the error in it.
 
-So, we recalibrate it to give us the real probability distribution. Rather than taking the forcasting literraly true, we take it as a signal and recalibrate it.    
+So, we recalibrate it to give us the real probability distribution. Rather than taking the forecasting literally true, we take it as a signal and recalibrate it.    
 
 ![19](Picturs/pic_19.PNG)
 
 ![20](Picturs/pic_20.PNG)
 
-The solid line shows the sequence of the decisions. At the first days, you are more conservative and there are more days left. Then, you see there are a lot of flight left and you start dropping the probabilities and having the flight on risky days. At the end, you have budget left and you start burnning it. 
+The solid line shows the sequence of the decisions. At the first days, you are more conservative and there are more days left. Then, you see there are a lot of flight left and you start dropping the probabilities and having the flight on risky days. At the end, you have budget left and you start burning it. 
 
 ![21](Picturs/pic_21.png)
 
