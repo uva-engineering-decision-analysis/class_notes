@@ -140,5 +140,5 @@ The following equation shows a measurment for measuring the error and $\alpha$ c
 
 $(\sum|\varepsilon^{\alpha}_{i})^{\frac{1}{\alpha}}$          $L^{\alpha}$
 
-
+Scoring rules: This is basically asking how good is your forcasting system. 
 
