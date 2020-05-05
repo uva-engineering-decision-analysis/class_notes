@@ -38,8 +38,51 @@ Want $Pr{E_{1}}=Pr{y	\le y_{int}}=\frac{\frac{1}{n}}{\sum_{y	\le y_{int}(1)}=p_{
 
 If $\hat{L_{emp}} \ge c_{2}, then $a^{*}=a_{2}$
 
+Need some model of the data generating process
 
-Given you have a hundered of the historical data and you are pretty confident about the loss function estimation. Now consider you have 6 of the historical data. 
+$y_{i}=y_{0}+	\varepsilon_{i}, 	\varepsilon_{i}\sim N(0,\sigma^{2}_{y})$
+
+![41](Picturs/pic_41.PNG)
+
+Here, the mean and variance are unknown.  
+
+Equavalently $y_{i}\sim N(y_{i},\sigma^{2}_{y}})$
+
+We need to find the distribution of the loses over the different actions. To do that, we need the distribution of the $y$
+
+Want the probability forcast of $y_{n+1}$
+
+To get it, estimate the $y_{0},\sigma^{2}_{y}}$ from $y_{1},y_{2},...,y_{n}$
+
+There is multiple ways to do that 
+
+Standard approach: OLS
+
+mean: min_{\hat{y_{0}}}\sum(\hat{y_{0}}-y_{i})^{2}=\sum()\hat{varepsilon_{i}}^{2}
+
+So, we will get the $y_{0},\sigma^{2}_{y}$
+
+![42](Picturs/pic_42.PNG)
+
+This is the the distribution y. This  describes the probaboloty forcast over the nest value of the y. With using it we can get the probability forcast for losses.
+
+Suppose, you plot your estimated errors $\hat{varepsilon_{i}}=y_{i}-\hat{y_{0}}$
+
+![43](Picturs/pic_43.PNG)
+
+The varianvce of the error tends to be growing. It violates the assumption of the indipendent identically distribution. This is called heterokedasticity. 
+When you work with data, you need to look at your data. 
+Sometimes, the decision is not big deal and you live with this. In overal, if heterokedasticity happenes, we would have the wrong estimate of probabilities.
+
+
+
+
+
+
+
+
+
+
 
 
 
