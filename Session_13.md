@@ -123,7 +123,7 @@ What does the following graph shows?
 
 There is a missing outlier. It has information and it is unusuall event. 
 
-
+You use OLS to estimate \hat{\theta} in orrder to minimize the amount of the error.
 
 
 
