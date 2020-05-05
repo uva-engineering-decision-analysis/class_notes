@@ -12,11 +12,11 @@ The analysis here uses statistical decision theory to generate a recommendation 
 
 ## Action set
 
-The action set $\mathbb{A}$ includes just two elements: $\mathbb{A} = \{a_1, a_2\}$, where $a_1$ and $a_2$ correspond to the decsions to not purchase insurance, and to purchase insurance, respectively.
+The action set $\mathbb{A}$ includes just two elements: $\mathbb{A} = \{a_1, a_2\}$, where $a_1$ and $a_2$ correspond to the decisions to not purchase insurance, and to purchase insurance, respectively.
 
 ## Payoffs: The loss function
 
-Let $L(a,y)$ denote the losses incurred by the publican. These depend on the action chosen, and on $y$, the high temperature in Charlotteville on March 17, measured in degrees Celsius. 
+Let $L(a,y)$ denote the losses incurred by the publican. These depend on the action chosen, and on $y$, the high temperature in Charlottesville on March 17, measured in degrees Celsius. 
 
 
 Suppose we have two possible actions $a \in {a_{1},a_{2}}$ and we want to predict the weather temperature $y_{n+1}$ and based on that we want to decide about the two following action. 
@@ -33,15 +33,15 @@ Historical data on $y=y_{1},y_{2},...,y_{n}$. This is the history of the tempera
 
 We want:
 
-* probabilistic forcast of $y_{n+1}$
+* probabilistic forecast of $y_{n+1}$
 
 * use prediction to choose optimal $a^{*}$
 
 What to do?
 
-We want the probabilistic forcast, we want to know the distribution probability for $y_{n+1}$. 
+We want the probabilistic forecast, we want to know the distribution probability for $y_{n+1}$. 
 
-Some times the pey off is not symmetric. If the tempreture is high, the loss is high. If the temprature is low, the loss is low.
+Sometimes the payoff is not symmetric. If the temperature is high, the loss is high. If the temperature is low, the loss is low.
 
 Based on the loss function which action should be chosen?
 
@@ -65,11 +65,11 @@ $y_{i}=y_{0}+	\varepsilon_{i}, 	\varepsilon_{i}\sim N(0,\sigma^{2}_{y})$
 
 Here, the mean and variance are unknown.  
 
-Equavalently $y_{i}\sim N(y_{i},\sigma^{2}_{y}})$
+Equivalently $y_{i}\sim N(y_{i},\sigma^{2}_{y}})$
 
 We need to find the distribution of the loses over the different actions. To do that, we need the distribution of the $y$
 
-Want the probability forcast of $y_{n+1}$
+Want the probability forecast of $y_{n+1}$
 
 To get it, estimate the $y_{0},\sigma^{2}_{y}}$ from $y_{1},y_{2},...,y_{n}$
 
@@ -83,27 +83,15 @@ So, we will get the $y_{0},\sigma^{2}_{y}$
 
 ![42](Picturs/pic_42.png)
 
-This is the the distribution y. This  describes the probaboloty forcast over the nest value of the y. With using it we can get the probability forcast for losses.
+This is the distribution y. This describes the probability forecast over the nest value of the y. With using it we can get the probability forecast for losses.
 
 Suppose, you plot your estimated errors $\hat{varepsilon_{i}}=y_{i}-\hat{y_{0}}$
 
 ![43](Picturs/pic_43.png)
 
-The varianvce of the error tends to be growing. It violates the assumption of the indipendent identically distribution. This is called heterokedasticity. 
+The variance of the error tends to be growing. It violates the assumption of the independent identically distribution. This is called heteroskedasticity. 
 When you work with data, you need to look at your data. 
-In overal, if heterokedasticity happenes, we would have the wrong estimate of probabilities.
-
-
-
-
-
-
-
-
-
-
-
-
+In overall, if heteroskedasticity happens, we would have the wrong estimate of probabilities.
 
 
 
