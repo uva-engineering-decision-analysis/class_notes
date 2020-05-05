@@ -1,12 +1,31 @@
 # Session 12
 
+# The decision problem
+
+A pub owner in Charlottesville plans to sell beer outside on St. Patrick's Day, March 17. The pub owner must decide whether to arrange to rent a supplemental refrigeration system for the day. 
+
+Supplemental refrigeration offers a form of insurance. If temperatures outside on March 17 are high and the pub owner has not arranged supplemental refrigeration, she will be left with warm beer that she will have difficulty selling, leading to financial losses. Conversely, if she pays for supplemental refrigeration when temperatures are low, she will have incurred an unnecessary expense.
+
+The analysis here uses statistical decision theory to generate a recommendation about whether or not to pay to rent a supplemental refrigeration system, in order to insure against the potential of financial losses in case of high temperatures.
+
+# Formalism
+
+## Action set
+
+The action set $\mathbb{A}$ includes just two elements: $\mathbb{A} = \{a_1, a_2\}$, where $a_1$ and $a_2$ correspond to the decsions to not purchase insurance, and to purchase insurance, respectively.
+
+## Payoffs: The loss function
+
+Let $L(a,y)$ denote the losses incurred by the publican. These depend on the action chosen, and on $y$, the high temperature in Charlotteville on March 17, measured in degrees Celsius. 
+
+
 Suppose we have two possible actions $a \in {a_{1},a_{2}}$ and we want to predict the weather temperature $y_{n+1}$ and based on that we want to decide about the two following action. 
 
 The pay of is only depends on the true value of some $L(a,y_{n+1})$
 
-$a_{1}$: you do not buy extra cooling and you risk it
+$a_{1}$: not purchase insurance
 
-$a_{2}$: you buy the extra cooling 
+$a_{2}$: purchase insurance
 
 ![40](Picturs/pic_40.png)
 
