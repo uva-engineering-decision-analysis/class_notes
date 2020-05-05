@@ -1,6 +1,6 @@
 # Session 10
 
-How much it favors very conservative states of decision making when you refuse the quantify uncertainty? you need to quantify uncertainty. What you need to do is taking the uncertainties and quantifying them with the best you can, turnning them into the manageable risks and figuring out strategies for managing those risks. 
+How much it favors very conservative states of decision making when you refuse the quantify uncertainty? you need to quantify uncertainty. What you need to do is taking the uncertainties and quantifying them with the best you can, turning them into the manageable risks and figuring out strategies for managing those risks. 
 
 Sometime you have some kind of model that you use such as classification model, statistical model and so on that delivers the output and you need to do some post processing to convert those outputs to probabilities over the features.
 
@@ -13,7 +13,7 @@ Suppose you want to estimate the fraction of a population that is infected with 
 
 $\theta \in [0,1]$ : true value
 
-Test a randome sample of $20$ from the population. 
+Test a random sample of $20$ from the population. 
 
 $Y \in \{0,1,\ldots,20\}$ : # of positive results.
 
