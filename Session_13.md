@@ -71,11 +71,13 @@ This model asserts several substantive assumptions about the data generating pro
 ![43](Picturs/pic_43.png)
 In the above graph, this above assuption is not supportive. You are understimatting the risk of avery high temperature. Systematically, you are understimating the probability of the very latge loss. It will lead to the wrong recommendation.
   
-And others.
 
 ![44](Picturs/pic_44.png)
 
+
 This graph shows that for each amount of the loss what is the probbability of getting that amount of the damage of loss. It is the summery picture of tail risk. It is not the probability of each level, it is the probability of exceeding any given total loss level.
+
+And others.
 
 In general, it is important to formulate a statistical model that accurately reflects the true characteristics of the underlying data generating process.
 
@@ -94,5 +96,35 @@ If you find evidence that your prediction model is mis-specified, it may be wort
 One very good idea is to perform a *sensitivity analysis*. How sensitive are your decision recommendations and outcomes to the assumptions you've built into your statistical model? If you are not highly confident in your statistical assumptions, and if those assumptions turn out to matter a lot for your recommendations and outcomes, then it could very well be worth the bother to revisit those assumptions, and investigate alternatives.
 
 On the other hand, if your decision recommendations are not highly sensitive to your statistical assumptions, then keeping your initial model may be defensible. The point of this work is *not* to build the best possible prediction system, bullet-proof against any statistical criticism. The point is to help people make good decisions -- or at least, decisiions better than they would have made otherwise. Your time and other resources are limited. A good-enough model may be good enough.
+
+## Simulation of the prediction process, no covariates
+
+![45](Picturs/pic_45.png)
+
+![46](Picturs/pic_46.png)
+
+$y_{i}=\theta+\varepsilon_{i}$
+
+$\hat{\theta}=\frac{1}{n}\sum y_{i}=\bar{y}$
+
+$\varepsilon_{i}=y_{i}-\bar{y}$
+
+Suppose that your errors are kind of like the following shape
+
+![47](Picturs/pic_47.png)
+
+There is another variable that we have not consider it. There is missing variable.
+
+$y_{i}=\beta_{0}+\beta{1}x_{i}+\varepsilon_{i}$  Here, there might be multiple explenatory variable
+
+What does the following graph shows?
+
+![48](Picturs/pic_48.png)
+
+There is a missing outlier. It has information and it is unusuall event. 
+
+
+
+
 
 
