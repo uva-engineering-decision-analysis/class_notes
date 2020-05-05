@@ -95,7 +95,9 @@ E[L(Y|X)]=E.L.(x)
 
 For any given x,
 
-Let $a^{*}=argmin {E.L.(x),C_{0}}$
+Let $a^{*}(x)=argmin {E.L.(x),C_{0}}$
+
+How much value does this created by refining the prediction system in this way?
 
 
 
