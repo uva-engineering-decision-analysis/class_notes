@@ -2,15 +2,15 @@
 
 ## The Cloud Hunter's Problem
 
-There were clients here who were atmosphoric scientists. They had limited budget, which is the flight hours. In order to collect data, they have to fly a plane into the certain type of the clouds. In this application they were looking for the boundry layers. The Cloud Hunter wants to collect data from inside *liquid boundary layer clouds*. They were looking for particular atmosphoric conditions and they have to make their decisions about when and where they wanted to make their plane fly. They do not know in advance that where or not they are going to get the conditions that they are looking for that are suitable for data collection for the kinds of the program they had in their mind. 
+There were clients here who were atmospheric scientists. They had limited budget, which is the flight hours. In order to collect data, they have to fly a plane into the certain type of the clouds. In this application they were looking for the boundary layers. The Cloud Hunter wants to collect data from inside *liquid boundary layer clouds*. They were looking for particular atmospheric conditions and they have to make their decisions about when and where they wanted to make their plane fly. They do not know in advance that where or not they are going to get the conditions that they are looking for that are suitable for data collection for the kinds of the program they had in their mind. 
 The Cloud Hunter’s Problem concerns how to allocate a fixed budget of flight hours between dates over the course of a field season. 
 
 Fly/No-fly decisions must be made 1 day ahead, based on imperfect day-ahead forecasts of whether conditions are good or bad for collecting required data.
 
 
 
-To solve this problem, traditionally the decision making process features a lot of atmosphoric scientists sitting arround the table and looking at the maps of the forcasts and argueing with each other. In that situation, they got tons of the forcasts and discuss it with each other. they may not have done a bad job about figuring out what is the probability of the having good weather tommorrow. However, they may not have been good at 
-figuring out what is the opportunity cost of using up some of the flight hours from the budget. They may risk and  used up the flight in the bad condithions and there is some cost in terms of less optionality to take advantage of possibly more promissing conditions later in the field season. The brain cannot do dynamic optimization and statistical process.
+To solve this problem, traditionally the decision-making process features a lot of atmospheric scientists sitting around the table and looking at the maps of the forecasts and arguing with each other. In that situation, they got tons of the forecasts and discuss it with each other. they may not have done a bad job about figuring out what is the probability of the having good weather tomorrow. However, they may not have been good at 
+figuring out what is the opportunity cost of using up some of the flight hours from the budget. They may risk and used up the flight in the bad conditions and there is some cost in terms of less optionality to take advantage of possibly more promising conditions later in the field season. The brain cannot do dynamic optimization and statistical process.
 
 ## Formal model of the Cloud Hunter's decision problem
 
@@ -55,7 +55,7 @@ Resource constraint: $\sum_d a_d \leq F$.
 *Payoffs*: For a given sequence of choices $\bf{a}$ and realizations $\bf{x}$, the realized amount of data collected $U$ is given by 
 $$U = \mathbf{a \cdot x} =\sum_d a_d x_d$$.
 
-*Decision-maker's objective*: Choose a fly/no-fly decision rule to maximize data collected in expection, subject to the resource constraint on total allowable flights:
+*Decision-maker's objective*: Choose a fly/no-fly decision rule to maximize data collected in expectation, subject to the resource constraint on total allowable flights:
 
 Choose $\bf{a}$ to $max_{\bf{a}} = E[\bf{a} \cdot \bf{X}]$, subject to $\sum_d a_d \leq F$.
 
@@ -66,9 +66,9 @@ Choose $\bf{a}$ to $max_{\bf{a}} = E[\bf{a} \cdot \bf{X}]$, subject to $\sum_d a
 
 ### Forecasts
 
-Give we have a forcasting system and it delivers us a set of singnals instead of forcasts which you should believe and take literally. THese signals are not the output of the weathe prediction model. We just consider it somehow correlated with the process which we care about. We do not take literally what the signal says, instead we map this signal to the probability distribution based on our experience or understanding of the signaling system. Your job is to decode the dignal and you should find out how to map the given signal to the probability distribution over the state of the word. 
+Give we have a forecasting system and it delivers us a set of signals instead of forecasts which you should believe and take literally. These signals are not the output of the weather prediction model. We just consider it somehow correlated with the process which we care about. We do not take literally what the signal says, instead we map this signal to the probability distribution based on our experience or understanding of the signaling system. Your job is to decode the signal and you should find out how to map the given signal to the probability distribution over the state of the word. 
 
-Everyday, here, atmosphoric scientists got forcasting signal and it drawn from some set of possible signals. Given that signal, we have some  way to convert that signal to probability of a certain day. When we figure out how that mapping works, we no longer care about any of the stuff that went into to make the mapping. We treat it as a converter that converts the signal to the probability.
+Every day, here, atmospheric scientists got forecasting signal and it drawn from some set of possible signals. Given that signal, we have some way to convert that signal to probability of a certain day. When we figure out how that mapping works, we no longer care about any of the stuff that went into to make the mapping. We treat it as a converter that converts the signal to the probability.
 
 
 Decision taken on basis of a day-ahead forecast.
@@ -81,14 +81,14 @@ $$p(s) =  \Pr\{X_d = 1 | s_d = s\}$$.
 
 (Will assume stationarity.)
 
-In general, in each day you got a signal and calculated the probability corresponing having a good condition in the next day. You did not know anything about the probability of the days beyond tomorrow. 
+In general, in each day you got a signal and calculated the probability corresponding having a good condition in the next day. You did not know anything about the probability of the days beyond tomorrow. 
 
 
 ### Distribution of forecast signals
 
 More than one day ahead, don't know which forecast signals $s \in \mathbb{S}$ will be received.
 
-But, *do* know the the likelihood of receiving different signals.
+But, *do* know the likelihood of receiving different signals.
 
 $\pi(s)$ : probability that forecasting system will generate signal $s$. 
 
@@ -138,19 +138,19 @@ $ max_{a} E[a.X] $
 
 We want to choose sequence of the actions that maximizes the above objective function.
 
-Successes are flights launched on days with good conditions. If we fly the plane on he day that the condintion of the weather is not good it is not a success. Beside, if we do not fly the plane on the day that the condition is good is not success to. 
+Successes are flights launched on days with good conditions. If we fly the plane on the day that the condition of the weather is not good it is not a success. Besides, if we do not fly the plane on the day that the condition is good is not success to. 
 
-Each day we get signals: $s_{D}.s_{D-1},\ldots, s_{1}\in S$   Forcast signals
+Each day we get signals: $s_{D}.s_{D-1},\ldots, s_{1}\in S$   Forecast signals
 
-We have a calibrated fuction that maps the signal
+We have a calibrated function that maps the signal
 
 $p(s)=pr{X_{d}|s_{d}=s}$
 
 How it works:
 
-Suppose 10 days left in the field season. We have three forcast in our budget. The forcast says that there 30 percent chance that tommorrow is going to be a good condition. Should we go for it? To solve this case think of the simpler version of this case. Instead of thinking there are ten days left, consider there is only one day left and you have one flight left in your budget, you will fly your plane. On the other hand, consider there is only one day left and you have no flight left in your budget, you won't fly your plane. In this case, having only one day left, there is no decision to make.Consider two days left, and there is only one fligt left. Now, we have real decision. We have forcast signal only for one day ahead ($s_{d}$). For two days ahead, $S_{d}$ is a random forcast signal with probability distribution $\pi(.)$
+Suppose 10 days left in the field season. We have three forecast in our budget. The forecast says that there is 30 percent chance that tomorrow is going to be a good condition. Should we go for it? To solve this case, think of the simpler version of this case. Instead of thinking there are ten days left, consider there is only one day left and you have one flight left in your budget, you will fly your plane. On the other hand, consider there is only one day left and you have no flight left in your budget, you won't fly your plane. In this case, having only one day left, there is no decision to make. Consider two days left, and there is only one flight left. Now, we have real decision. We have forecast signal only for one day ahead ($s_{d}$). For two days ahead, $S_{d}$ is a random forecast signal with probability distribution $\pi(.)$
 
-S={1,2,...,24} are the forcasting signals that we may get. For example, for tommorrow we get one of these signal and when we get it we are able to convert it to the probability. 
+S={1,2,...,24} are the forecasting signals that we may get. For example, for tomorrow we get one of these signal and when we get it we are able to convert it to the probability. 
 
 Case: d=2 and f=1
 
@@ -158,7 +158,7 @@ We know $s_{2}$, therefore $p(s_{d})=Pr{X_{d}=1|s_{d}}$
 
 We know $s_{1}$ will take one of the 24 values, and how likely each is.
 
-Our goal is to maximie the objective function. We know based on what we do today, we already know what we are going to do tomorrow. If we fly today, by how much in expectation we will increase our toatal take? If we fly today what would be the expected marginal increase? 
+Our goal is to maximize the objective function. We know based on what we do today, we already know what we are going to do tomorrow. If we fly today, by how much in expectation we will increase our total take? If we fly today what would be the expected marginal increase? 
 
 Suppose we have now 29 successes, Suppose $a_{2}=1$
 
@@ -182,7 +182,7 @@ $=E^{x}[p(s)]=\pi(S=s_{1})Pr{x_{1}=1|s_{1}=1}+\pi(S=s_{2})Pr{x_{1}=1|s_{2}=1}$+.
 
 $\Sigma\pi(s).p(s)=E^{\pi}[p(s)]$
 
-So, Should you fly today or not. We choose to fly today if "29+$p(s_{2})$" is greater then $E^{\pi}[p(s)]$.
+So, should you fly today or not. We choose to fly today if "29+$p(s_{2})$" is greater than $E^{\pi}[p(s)]$.
 
 So, we choose $a_{2}$ iff $p(s_{2})	\ge E^{\pi}[p(s)]$
 
