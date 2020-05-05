@@ -1,8 +1,8 @@
 # Session 5
 
-In the previous example "When should I leave my house to get to the airport", we do not use directly the estimated value, because there is an uncertainty and error in estimation how long it will to take you to get to the airport. The cost of the error is not symmetric; it will cost you a lot more to be a little bit late than to be a little bit early there. Therefore, your optimal action, should take that estimation error into account. You choose the action that maximazes payoff in estimation rather than the estimate of unobserved parameter and then, plug that into the decision making formula, assuming it is correct, ignoring the error and then make an action based on that assumption (estimated value).
+In the previous example "When should I leave my house to get to the airport", we do not use directly the estimated value, because there is an uncertainty and error in estimation how long it will to take you to get to the airport. The cost of the error is not symmetric; it will cost you a lot more to be a little bit late than to be a little bit early there. Therefore, your optimal action, should take that estimation error into account. You choose the action that maximizes payoff in estimation rather than the estimate of unobserved parameter and then, plug that into the decision making formula, assuming it is correct, ignoring the error and then make an action based on that assumption (estimated value).
 
-Here, We need to quantify the amount of the error (uncertainty) and take inti account to make a rigorous optimal decision. This is why the statistical decision theory is a powerful tool because it gives you the rigorous way to deal with the error.
+Here, we need to quantify the amount of the error (uncertainty) and take inti account to make a rigorous optimal decision. This is why the statistical decision theory is a powerful tool because it gives you the rigorous way to deal with the error.
 
 Actions: $a \in A$
 
@@ -10,13 +10,13 @@ States: $x \in X$, Parameters: $\theta \in \Theta$
 
 $x_{1},x_{2},...,x_{n}$ random variables on X
 
-Suppose we have uncertainty about our parameter values and in our game directly or indirectly we are depends on the values of the unobserved parameters.
+Suppose we have uncertainty about our parameter values and in our game directly or indirectly we are depending on the values of the unobserved parameters.
 
-So, we suppose that we got some posibility to get better information about unobserved parameters and there can be different ways.  Here, we suppose we are going to get information by using statistical sampling from the state space and the statistical inference.
+So, we suppose that we got some possibility to get better information about unobserved parameters and there can be different ways.  Here, we suppose we are going to get information by using statistical sampling from the state space and the statistical inference.
 
-EX: Who is going to win the election and it depends on the population. Therefore, you can learn by doing some statistical smapling and from that you can get information.
+EX: Who is going to win the election and it depends on the population. Therefore, you can learn by doing some statistical sampling and from that you can get information.
 
-When we are doing sampling, we suppose that they are independent and identically distributed (iid).
+When we are doing sampling, we suppose that they are independent and identically distributed (i.i.d).
 
 f(x): Defines the probability distribution for all $x_{i}$ (for now drop i)
 
@@ -36,7 +36,7 @@ Then, $pr{x\subseteq B}=\int_{x\in B}f(x)dx $
 
 ![10](Picturs/pic_10.png)
 
-Suppose that there are probability density depends on the values of the unobserved parameter ($\theta$), e.g. If we belive that the values are normally distributed, then it depends on two parameters including the $\mu$ and $\sigma$ of the distribution. 
+Suppose that there are probability density depends on the values of the unobserved parameter ($\theta$), e.g. If we believe that the values are normally distributed, then it depends on two parameters including the $\mu$ and $\sigma$ of the distribution. 
 
 $f(x)=f(x\\theta)$
 
@@ -44,9 +44,9 @@ Ex: $x_{1},x_{2},...,x_{n}\sim N(\mu,\sigma)$
 
 $\theta=<\mu,\sigma^{2}>$
 
-Let $\pi(\theta)$ denotes our prior believs about values of $\theta$
+Let $\pi(\theta)$ denotes our prior believes about values of $\theta$
 
-We are going to use any kind of predictive model or tool to sharpen or probabilirt distribution over the state variables as it was shown in the below figure. in this way we would have more confidence when we choose an action. 
+We are going to use any kind of predictive model or tool to sharpen or probability distribution over the state variables as it was shown in the below figure. in this way we would have more confidence when we choose an action. 
 
 ![11](Picturs/pic_11.png)
 
@@ -57,7 +57,7 @@ Suppose we know exactly what $\theta$ is, then choosing optimal $a^{*}$ is trivi
 
 $a^{*}$ =arg max L(a\\theta)
 
-more generally suppose our belifs about $\theta$ reprsentated by $\pi(\theta)$
+more generally suppose our beliefs about $\theta$ represented by $\pi(\theta)$
 
 Then, for each action $a \in A$, $L(a\\theta) is a random variable. When you choose an action, you are choosing in effect the lottery, and then depending on $\theta$, you will realize some loss.
 
@@ -68,9 +68,9 @@ Expected loss, given beliefs $\pi(\theta)$
 $E[L(a\\theta)]=\int_{\theta\in\Theta}L(a\\theta)\pi(\theta)d\theta$
 
 
-EX: The airport departure decision: if you have the suppose that $\theta$ governs how long is going to take you to get to the airport in the likelihood of the plane is late or other things; a is how early you decide to leave. Then, when you choose the actiob (when you are going to leave), given the beliefs you have the expected pay off that includes all of the probabilities over your beliefs about $\theta$.
+EX: The airport departure decision: if you have the suppose that $\theta$ governs how long is going to take you to get to the airport in the likelihood of the plane is late or other things; a is how early you decide to leave. Then, when you choose the action (when you are going to leave), given the beliefs you have the expected pay off that includes all of the probabilities over your beliefs about $\theta$.
 
-$\theta$: The time your plane leaves. HOw long you wil need.
+$\theta$: The time your plane leaves. How long you will need.
 
 $\pi(\theta)$: your beliefs about $\theta$
 
@@ -120,12 +120,12 @@ $E^{\pi}[h(x)]\geh(E^{\pi}[x])$
 
 The loss of the expected value is not going to be the same as the expected value of the loss.
 
-Therefore the action that minimzes our loss is not going to be identified by just assuming that we got the right answer for estimation of $\theta$ ($E[\theta]$) and pugging it into the equation of the loss.
+Therefore the action that minimizes our loss is not going to be identified by just assuming that we got the right answer for estimation of $\theta$ ($E[\theta]$) and pugging it into the equation of the loss.
 
 Actually, we need to take into account the uncertainty. 
 
-Suppose you have an upportinity to learn more about the data before you make a decision, maybe in the example by looking at the traffic forcast and update your beliefs about how long it will take you to get to the airport.
-The predictive tool allows you to sharpen your beliefs and allows you to make an optimiation action. More generally, we got a lot of different kind of the predictive tools and what we are thinking about more is to sharppen our prior beliefs which give us a different probabilities over $\theta$.
+Suppose you have an opportunity to learn more about the data before you make a decision, maybe in the example by looking at the traffic forecast and update your beliefs about how long it will take you to get to the airport.
+The predictive tool allows you to sharpen your beliefs and allows you to make an optimization action. More generally, we got a lot of different kind of the predictive tools and what we are thinking about more is to sharpen our prior beliefs which give us a different probabilities over $\theta$.
 
 What our predictive tools do is sharpen our beliefs about $\theta$.
 
@@ -138,7 +138,7 @@ $x_{1},x_{2},...,x_{n} \longmapsto \pi(\theta\x_{1},x_{2},...,x_{n})$
 $\pi(\theta\x_{1},x_{2},...,x_{n}$: Updated or posterior beliefs
 
 
-One important approach to updating the beliefs is Baysian Analysis.
+One important approach to updating the beliefs is Bayesian Analysis.
 
 
 
