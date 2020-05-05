@@ -125,6 +125,18 @@ There is a missing outlier. It has information and it is unusuall event.
 
 You use OLS to estimate \hat{\theta} in orrder to minimize the amount of the error.
 
+Why do we use the square of the errors? It emphasize the big errors. Big errors refers to the big loss. 
+
+Other option is to minimize the absokute value of the errors. It depends on your problem, to choose one of these options. 
+
+1- min MSE: $\sqrt{\sum|\varepsilon^{2}_{i}}$
+
+2- min MAE: $\sum|\varepsilon_{i}|$
+
+The second option is less sensitive to the big errors.
+
+
+
 
 
 
