@@ -36,7 +36,7 @@ $y_{1},y_{2},...,y_{n}$     historic observations
 
 $x_{1},x_{2},...,x_{n}$     historic forcasts
 
-1- Estimate the model without the forcast
+#### 1- Estimate the model without the forcast
 
 $y_{i}=\theta+\varepsilon_{i}$
 
@@ -56,6 +56,11 @@ Here, $\hat{\theta},s^{2}$ estimated with error. Therefore, If you do not handle
 
 If your model mis-spessifies the original data generative process, you will also have the mis-specification of your actual risk and it may lead to the wrong decision. 
 
+living with some kind of mis-specificationmaight be fine depend on the application.
+
+#### 2- Estimate w/ forcasts, what is the expected value of information?
+
+This is going to ask how much better your decision is going to be if you actually have a prdictive model that helps inform the decision. It might have some signal that may be is not perfect because it is only information. Then, on average how much loss you avoide compare to if you made otherwise the same decision making process but without the prdictive model. The information is valuable if it lead you  to the different decision that you whould not have mad otherwise. 
 
 
 
