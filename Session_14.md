@@ -7,11 +7,11 @@ It is limitted data.
 
 ![49](Picturs/pic_49.png)
 
-![50](Picturs/pic_50.png)
+![50](Picturs/pic_50.PNG)
 
 In the above graph, you might think that the estimted average is higher than the actual average.
 
-![51](Picturs/pic_51.png)
+![51](Picturs/pic_51.PNG)
 
 
 The estimated average and standard deviasion are quite higher than the actual ones. 
