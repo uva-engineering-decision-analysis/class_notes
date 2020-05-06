@@ -1,7 +1,7 @@
 # Session 3
 
 
-Sometimes the actual decision problem was not very well articulated. In the decision problems there is always a cost or benefit and your goal is to find a tradeoff between them. So, when you are articulating the decision problem you are going to find what is the cost or benefit in the decision problem and what is the state variable space. The decision problems mean the set of options that someone has to make. For example, there is a fix budget for food and you are going to purchase nutrition and calories in order to maximize the quantify nutrition health benefits. 
+Sometimes the actual decision problem was not very well articulated. In the decision problems, there is always a cost or benefit and your goal is to find a tradeoff between them. So, when you are articulating the decision problem you are going to find what is the cost or benefit in the decision problem and what is the state variable space. The decision problems mean the set of options that someone has to make. For example, there is a fixed budget for food and you are going to purchase nutrition and calories in order to maximize the quantify nutrition health benefits. 
 
 
 ## Formulization for statistical decision model:
@@ -12,7 +12,7 @@ Example: you have a fixed budget and you got two assets including safe and risky
 
 Ex 1: Portfolio allocation, 2 assets including safe and risky
 
-Action: fraction of the portfolio in a risky asset
+Action: the fraction of the portfolio in a risky asset
 
 $0 \leq a \leq 1$    $A=[0,1]\equiv \bigtriangleup^{1}$ 
 
@@ -28,7 +28,7 @@ $\equiv \bigtriangleup^{2}$   The unit simplex in $R^{3}$
 
 ![7](Picturs/pic_7.png)
 
-There are a set of points, each of them are non-negative and their summation is equal to the one.
+There are a set of points, each of them is non-negative and their summation is equal to the one.
 
 The following is the two-dimensional object in the three-dimensional space
 
@@ -41,13 +41,13 @@ States: $x \in X$
 
 x refers to the observable data about the state of the worlds
 
-X state space or sample space
+X: state space or sample space
 
-In some application we are going to have dataset, we are going to analyze then and we will come up with some estimated parameters and some actions based on that. In other cases, we may not yet know the values of our data but we may anticipate.
+In some applications we are going to have a dataset, we are going to analyze then and we will come up with some estimated parameters and some actions based on that. In other cases, we may not yet know the values of our data but we may anticipate.
 
-Example: Medical test, the previous example related to whether or not perform the test in order to gain new information.
+Example: Medical test, the previous example related to whether or not to perform the test to gain new information.
 
-You have to decide based on the trade of associate with that test before you actually get the information
+You have to decide based on the trade of associate with that test before you get the information
 
 Therefore, x in some application is the observable data which is not yet observed. 
 
@@ -57,7 +57,7 @@ EX: Medical test, X={test is negative, test is positive}={0,1}
 
 Let X random variable corresponding to the test result.
 
-We write $X 	\sim \beta(\theta)$
+We write $X     \sim \beta(\theta)$
 
 X is distributed as a Bernoulli the parameter $\theta$
 
@@ -65,11 +65,11 @@ $Pr{X=1}=\theta$
 
 $Pr{X=0}=1-\theta$
 
-Ex: X is the next Thursday temperature at Charlottesville airport
+Ex: X is next Thursday temperature at Charlottesville airport
 
-$X 	\sim N(\theta,\sigma^{2})$
+$X     \sim N(\theta,\sigma^{2})$
 
-Based on the whether you may decide about shutting down schools. It will cost you if you decide to shut down school while the weather is good. Also, it will cost you if you do not shut down the school when the weather is not good.
+Based on the weather you may decide about shutting down schools. It will cost you if you decide to shut down the school while the weather is good. Also, it will cost you if you do not shut down the school when the weather is not good.
 
 
 Suppose that X={1,2,...,N}, there are N states
@@ -82,7 +82,7 @@ Then $\Theta=<\theta_{1},\theta_{1},...,\theta_{N}>
 
 defines a probability distribution on X
 
-Here $0\le\theta_{1}\le 1, 	\sum\theta=1$
+Here $0\le\theta_{1}\le 1,     \sum\theta=1$
 
 The set of all possible $\theta=bigtriangleup^{n-1}$
 
