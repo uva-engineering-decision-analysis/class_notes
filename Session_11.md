@@ -1,11 +1,11 @@
 # Session 11
 
 
-Example: We have the population of the fathers and sons and their occupation are divided into the five categories. The numbers in the table shows the joined probability distribution. Also, the sum of the all numbers in the table equals to one. 
+Example: We have a population of fathers and their sons. Their occupation is divided into five categories. The numbers in the table show the joined probability distribution. Also, the sum of all numbers, in the table, equals to one. 
 
 ![31](Picturs/pic_31.PNG)
 
-Two variables are independent if knowing one of them do not give you information about the other one. Also, two variables are independent if the following relationship is true between them:
+Two variables are independent if knowing one of them does not give you information about the other one. Also, two variables are independent if the following relationship is true between them:
 
 $P(A\capB)=P(A)\timesP(B)$
 
@@ -116,13 +116,13 @@ The new expected value is being the weighted average of your prior expectation a
 
 ![35](Picturs/pic_35.png)
 
-The X-axis shows the w and the Y-axis shows the prior expectation. Given the prior expectation is 0.5 and the number of the positive tests is equal to zero. If you have high strong prior beliefs, your posterior mean is going to be about 0.26. 
+The X-axis shows the w, and the Y-axis shows the prior expectation. Given the prior expectation is 0.5 and the number of the positive tests is equal to zero. If you have high strong prior beliefs, your posterior mean is going to be about 0.26. 
 If you have less strong prior beliefs, your posterior mean is going to be about 0.16. 
 If you have very weak strong prior beliefs, your posterior mean is going to be about 0.02. 
 
 ## Building a predictive model
 
-Ex: We have a sample of 342 diabetes patients and for each of them we have observation for 64 different variables. These variables may or may not give you the useful information. Suppose that the progress of the diabetes is the linear function along with different variables. So, each wight indicates how important is the corresponding variable. We have error process in this model which is independent and identically distributed. The error follows the standard normal distribution There is the data dependence such as the data dependence between family members who live at the same house. Most of these variables may not been useful and relevant. 
+Ex: We have a sample of 342 diabetes patients, and for each of them we have an observation for 64 different variables. These variables may or may not give you useful information. Suppose that the progress of diabetes is the linear function along with different variables. So, each wight indicates how important is the corresponding variable. We have an error process in this model, which is independent and identically distributed. The error follows the standard normal distribution. There is data dependence, such as the data dependence between family members who live at the same house. Most of these variables may not be useful and relevant. 
 
 
 
@@ -134,11 +134,11 @@ Consider you find out the distribution of the $\theta$ given the sample expectat
 
 ![39](Picturs/pic_39.png)
 
-In the above left side graph, the predictions were plot against the observations. Here, if the model was perfect, every point will be exactly on the line. 
+In the above-left side graph, the predictions were plot against the observations. Here, if the model was perfect, every point will be exactly on the line. 
 
 ![37](Picturs/pic_37.png)
 
-In order to the prediction to be useful, it cannot depend on anything unobserved. When you get the probability for the prediction you have to get rid of all of the unobserved parameters.
+To have a useful prediction, you should be cautious that it cannot depend on anything unobserved. You have to get rid of all of the unobserved parameters.
 
 
 
