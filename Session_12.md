@@ -19,9 +19,9 @@ The action set $\mathbb{A}$ includes just two elements: $\mathbb{A} = \{a_1, a_2
 Let $L(a,y)$ denote the losses incurred by the publican. These depend on the action chosen, and on $y$, the high temperature in Charlottesville on March 17, measured in degrees Celsius. 
 
 
-Suppose we have two possible actions $a \in {a_{1},a_{2}}$ and we want to predict the weather temperature $y_{n+1}$ and based on that we want to decide about the two following action. 
+Suppose we have two possible actions $a \in {a_{1},a_{2}}$, and we want to predict the weather temperature $y_{n+1}$, and based on that we want to decide about the two following actions. 
 
-The pay of is only depends on the true value of some $L(a,y_{n+1})$
+The payoff only depends on the true value of some $L(a,y_{n+1})$
 
 $a_{1}$: not purchase insurance
 
@@ -39,7 +39,7 @@ We want:
 
 What to do?
 
-We want the probabilistic forecast, we want to know the distribution probability for $y_{n+1}$. 
+We want the probabilistic forecast; we want to know the distribution probability for $y_{n+1}$. 
 
 Sometimes the payoff is not symmetric. If the temperature is high, the loss is high. If the temperature is low, the loss is low.
 
@@ -67,13 +67,13 @@ Here, the mean and variance are unknown.
 
 Equivalently $y_{i}\sim N(y_{i},\sigma^{2}_{y}})$
 
-We need to find the distribution of the loses over the different actions. To do that, we need the distribution of the $y$
+We need to find the distribution of the losses over the different actions. To do that, we need the distribution of the $y$
 
 Want the probability forecast of $y_{n+1}$
 
 To get it, estimate the $y_{0},\sigma^{2}_{y}}$ from $y_{1},y_{2},...,y_{n}$
 
-There is multiple ways to do that 
+There are multiple ways to do that.
 
 Standard approach: OLS
 
@@ -83,13 +83,13 @@ So, we will get the $y_{0},\sigma^{2}_{y}$
 
 ![42](Picturs/pic_42.png)
 
-This is the distribution y. This describes the probability forecast over the nest value of the y. With using it we can get the probability forecast for losses.
+This is the distribution y. This describes the probability forecast over the nest value of y. Using it, we can get the probability forecast for losses.
 
 Suppose, you plot your estimated errors $\hat{varepsilon_{i}}=y_{i}-\hat{y_{0}}$
 
 ![43](Picturs/pic_43.png)
 
-The variance of the error tends to be growing. It violates the assumption of the independent identically distribution. This is called heteroskedasticity. 
+The variance of the error tends to be growing. It violates the assumption of the independent identically distribution. This is called the heteroskedasticity. 
 When you work with data, you need to look at your data. 
 In overall, if heteroskedasticity happens, we would have the wrong estimate of probabilities.
 
