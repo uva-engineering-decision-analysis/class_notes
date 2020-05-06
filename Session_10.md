@@ -2,7 +2,7 @@
 
 How much it favors very conservative states of decision making when you refuse the quantify uncertainty? you need to quantify uncertainty. What you need to do is taking the uncertainties and quantifying them with the best you can, turning them into the manageable risks and figuring out strategies for managing those risks. 
 
-Sometime you have some kind of model that you use such as classification model, statistical model and so on that delivers the output and you need to do some post processing to convert those outputs to probabilities over the features.
+Sometimes you have some kind of model that you use, such as classification model, statistical model, and so on that delivers the output and you need to do some post-processing to convert those outputs to probabilities over the features.
 
 
 ### Bayesian methods: Introduction via simple example
@@ -17,7 +17,7 @@ Test a random sample of $20$ from the population.
 
 $Y \in \{0,1,\ldots,20\}$ : # of positive results.
 
-Question: What does realized value of $Y$ tell us about the true value of $\theta$?
+Question: What does realize the value of $Y$ tells us about the true value of $\theta$?
 
 $Y | \theta$ ~ binomial$(20,\theta)$: For $y = 0, 1, \ldots, 20$,
 
