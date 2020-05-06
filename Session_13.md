@@ -69,13 +69,13 @@ This model asserts several substantive assumptions about the data generating pro
   * Temperature variations around the long-run average are assumed to be *identically distributed*. This assumption rules out the possibility that variance is, say, greater when temperatures are higher than when they are lower.
   
 ![43](Picturs/pic_43.png)
-In the above graph, this above assumption is not supportive. You are underestimating the risk of very high temperature. Systematically, you are underestimating the probability of the very large loss. It will lead to the wrong recommendation.
+In the above graph, this above assumption is not supportive. You are underestimating the risk of a very high temperature. Systematically, you are underestimating the probability of a very large loss. It will lead to the wrong recommendation.
   
 
 ![44](Picturs/pic_44.png)
 
 
-This graph shows that for each amount of the loss what is the probability of getting that amount of the damage of loss. It is the summery picture of tail risk. It is not the probability of each level; it is the probability of exceeding any given total loss level.
+This graph shows that for each amount of the loss what is the probability of getting that amount of the damage of loss. It is the summary picture of tail risk. It is not the probability of each level; it is the probability of exceeding any given total loss level.
 
 And others.
 
@@ -113,32 +113,33 @@ Suppose that your errors are kind of like the following shape
 
 ![47](Picturs/pic_47.png)
 
-There is another variable that we have not consider it. There is missing variable.
+There is another variable that we did not consider it. There is a missing variable.
 
-$y_{i}=\beta_{0}+\beta{1}x_{i}+\varepsilon_{i}$  Here, there might be multiple explanatory variable
+$y_{i}=\beta_{0}+\beta{1}x_{i}+\varepsilon_{i}$  Here, there might be multiple explanatory variables
 
 What does the following graph show?
 
 ![48](Picturs/pic_48.png)
 
-There is a missing outlier. It has information and it is unusual event. 
+There is a missing outlier. It has information and it is an unusual event. 
 
 You use OLS to estimate \hat{\theta} in order to minimize the amount of the error.
 
 Why do we use the square of the errors? It emphasizes the big errors. Big errors refer to the big loss. 
 
-Other option is to minimize the absolute value of the errors. It depends on your problem, to choose one of these options. 
+Another option is to minimize the absolute value of the errors. It depends on your problem, to choose one of these options. 
 
 1- min MSE: $\sqrt{\sum|\varepsilon^{2}_{i}}$    $L^{2}$
 
 2- min MAE: $\sum|\varepsilon_{i}|$              $L^{1}$
 
-The second option is less sensitive to the big errors. It cares about the total amount of the error while the first want put more weight for the biggest error.
+The second option is less sensitive to big errors. It cares about the total amount of the error while the first one puts more weight for the biggest error.
 
 
-The following equation shows a measurement for measuring the error and $\alpha$ can take different values and if the $\alpha$ is equal to $\infinity$, it means we care about only the biggest error. We want to minimize only the biggest error.
+
+The following equation shows a measurement for measuring the error, and $\alpha$ can take different values, and if the $\alpha$ is equal to $\infinity$, it means we care just about the biggest error. We want to minimize only the biggest error.
 
 $(\sum|\varepsilon^{\alpha}_{i})^{\frac{1}{\alpha}}$          $L^{\alpha}$
 
-Scoring rules: This is basically asking how good is your forecasting system.  
+Scoring rules: This is asking how good is your forecasting system.  
 
