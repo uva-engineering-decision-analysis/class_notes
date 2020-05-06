@@ -12,7 +12,7 @@
    
    - Each possible action thus maps to a *lottery* over uncertain payoffs.
    
- ### Uncertainty
+### Uncertainty
  
  * Typically, the decision-maker will possess some information about the likelihood of different states of nature. 
  
@@ -21,7 +21,7 @@
  representation of the uncertainty in an optimized way.
  
  
- ### Optimal choice
+### Optimal choice
 
  * Given a complete enumeration of 
    - the menu of possible actions, (a)
@@ -31,7 +31,7 @@
    
    then each possible action maps to a *lottery* over payoffs (losses).
    
-   ### Optimization: Defining objectives
+### Optimization: Defining objectives
 
  * Finally, given a lottery over payoffs, the actor chooses an *optimal* action guided by a *decision-making principle*:
  
@@ -94,6 +94,6 @@ Ex: You are going to do fraud detection. You have financial transactions that co
 
 There is raw data and preprocessing will be done on them. The output will be the structured data, which is data in terms which you can actually use. You use the structured data to calibrate your model. What it allows you to do is to get new input data and map your prior beliefs to the posterior believes about the data. Then, given your posterior beliefs, the output of the optimization model will be the optimal choice. 
 
-![14](Picturs/pic_14.png)
+![1](Picturs/pic_14.png)
 
 Intertemporal optimization: It is for a set of approaches for dealing cases, in which we have a set of copies of decisions and they have an impact on each other.

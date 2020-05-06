@@ -16,20 +16,20 @@ States of the word $\theta \in \Theta$
 
 It is the state, which is unknown and we have some information about it but it is imperfect.
 
-Example:  $\Theta = {0,1}$  
+Example:  $\Theta = \{0,1\}$  
 
 0: The weather condition is not good for the collection of data
 
 1: The weather condition is good for the collection of data
 
-We have beliefs about $\theta$ which can be represented by using probability distribution over $ \theta $.  $p(\theta)$  
+We have beliefs about $\theta$ which can be represented by using probability distribution over $\theta$.  $p(\theta)$  
 
-If $ \theta $  gets just two values, including, zero and one"
+If $\theta$  gets just two values, including, zero and one"
  
  \begin{equation}
   \begin{array}{l}
-    \Theta={0,1} \\ 
-     p(\theta)=prob{\theta=1}
+    \Theta=\{0,1\} \\ 
+     p(\theta)=prob\{{\theta=1}\}
   \end{array}
 \end{equation}
  
@@ -38,7 +38,7 @@ There are actions that can be taken:
 
 Actions:
 
-$$a \in A , A is a set of options$$
+$a \in A$ , A is a set of options
 
 For example, it can be about giving a certain drug to the patient or it can be about flying the plane or not
 
@@ -53,11 +53,11 @@ We have some kinds of predictive models which somehow are going to help us to im
  
 $P_{0}$ is the decision-maker beliefs about $\theta$
 
-$P_{1}$ it is the improved or sharpened the probability distribution over \theta by using the predictive models
+$P_{1}$ it is the improved or sharpened the probability distribution over $\theta$ by using the predictive models
 
 There are some kinds of payoff functions or loss functions which are the function of the taken action and the state of the art.  
 
-Example: U(a, \theta)
+Example: $U(a, \theta)$
 
 Example: Give a meditation (antibiotic) to the patient who may or may not have a particular disease (viral or bacterial). If the disease is the bacterial one, then giving the antibiotic will be helpful; otherwise not only does not it helpful but also it will reduce his resistance to antibiotics (It will have a negative impact).
 
@@ -77,19 +77,20 @@ We can calculate the average pay off per each action which was shown in the tabl
 As the calculated average pay off related to action “No” is bigger than action “Yes”, the action “No” will be selected.
 
 
-Suppose: prob{\theta=1}=0.8
+Suppose: $prob\{\theta=1\}=0.8$
  
 
 Suppose further our decision procedure calls for maximizing expected payoff. Then, the expected value for each action can be calculated as follows:
  
  ![2](Picturs/pic_2.png)
+
  ![3](Picturs/pic_3.png)
  
 Then, the expected payoff of action “yes” is bigger than action “no”.
 
 Some people may try to minimize the worse loss instead of maximizing the expected payoff. They may try to avoid the worse outcome. 
 
-Example: there is a game and if you many play it or not. If you win, you will get $200,00; otherwise, you will lose $300,000. Losing $300,00 is high and it would be rational for someone not to use maximization expected payoff in this situation. Someone may have a background attitude toward the risk. Then, it may be advisable for one not to maximize the expected value.
+Example: there is a game and if you many play it or not. If you win, you will get $200,000; otherwise, you will lose $300,000. Losing $300,000 is high and it would be rational for someone not to use maximization expected payoff in this situation. Someone may have a background attitude toward the risk. Then, it may be advisable for one not to maximize the expected value.
 
  |               | 0             |      1       | Average      |
  | ------------- | ------------- |------------- |------------- |

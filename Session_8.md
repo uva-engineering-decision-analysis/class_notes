@@ -2,7 +2,7 @@
 
 There is a report called "Completing the forecast". When we produce a forecast, of course, there is an error. What we can do is see if we can represent the error in our forecast, in a rigorous way. The weather system is a chaotic system which implies something in feature called sensitive dependence on initial conditions. It means if you mis-specify your initial condition by just a little bit, then as you forecast over time, even if you have the physics completely accurate, that small error in the way you specify the correct state of the system will inevitably lead to larger errors over time. Those errors do not grow linearly with time; they explode. This error is inevitable, since you cannot completely specify the state of the atmosphere. Even though you could do that accurately, there is not enough sensor. Let's represent our actual uncertainty about the forecasting. With different initial condition, you get different model runs coming out and then you measure the uncertainty in the forecast based on those models.
 
-![16](Picturs/pic_16.png)
+![1](Picturs/pic_16.png)
 
 There was a flood in the Red River in Grand Forks in 1997. They had prepared for the flood because they were getting forecast from Natural weather service about how high the river would rise. Then, they estimated how height the flood would go and gave the expected value. They forecasted the rivers only got up to "50 ft". Therefore, they decided to make sandbags and they thought if the hight of the sandbags were 50 ft, they would be safe. But, they did not. The forecast and the actual rising were shown in the graph. What happened was it bumped up the forecast very fast and there was not enough time left to increase the height of the sandbags. Therefore, there was a lot of blames that the Natural weather service did a poor job. It was not actually fair, because they gave the best forecast best on the data. The problem was that the expected value is not the information that they needed. They needed information about how high the sandbag should be. They did not know the best estimation for sandbags, they needed to know what is the probability of getting higher than 50 ft, 51 ft, and so on. When they had that information, they could have themselves calibrated how much risk they were willing to take. It was turned out that the Natural weather service, actually had that kind of the information but nobody asks them to produce that. They found out that the 54 ft was within the reasonable margin of the error given the analytics they were using. The left side graph was the kind of information they have started to produce since that event. In this graph, the green line shows the expected value and the blue boxes show the amount of the error. 
 
@@ -159,7 +159,7 @@ Assume you've got the right answer (!). Given that this answer is optimal, deriv
 
 Solve via backward induction.
 
-![15](Picturs/pic_15.png)
+![2](Picturs/pic_15.png)
  
 The right bottom circle is the end of the season. At that time, we would be out of the season and out of the flight. Therefore, the expected flight for the rest of the season would be zero. Besides, for all of the bottom circles, the expected value again would be zero. On the circle corresponding, one day left and one flight left, the expected value would be 28. What would be the value of being at the circle corresponding to two days left and one flight left? We know there are two ways to reach the end of the season. We will choose to go for one day left and no flight if its likelihood is bigger than 0.28. 
 
@@ -200,11 +200,11 @@ i.e., when the expected payoff of the current day's opportunity exceeds the loss
 Call $p(s_d)$ the *hurdle probability*.
 
 
-![17](Picturs/pic_17.PNG)
+![3](Picturs/pic_17.PNG)
 
 Think of you look at the specific location of the sky. As you look up and go higher, the atmosphere pressure reduces. The scientists instead of measuring the heights in terms of the meters measured the height in terms of the millibars. They were investigating what is going on at each different pressure level as you go up to the atmosphere. The basic idea is, the atmospheric pressure of the sea level is 1000 millibars. What you are interested in when you are thinking about forecasting boundaries of clouds is about how relative humidity is changing with pressure. It is not a strictly linear relationship between them. What you do is you would take lots of the snapshots of the atmosphere, which differ according to relative humidity profile. As you go up to the atmosphere, how much the relative humidity is. You will take them and put them in an unsupervised machine learning algorithm (clustering). The formula for distance is the Euclidean distance between these graphs. The algorithm clusters them into 24 groups. The number above each box shows the information about the existence of the boundary clouds. In our historic data set, every time the relative humidity profile end into the first box, 56 percent of them are associated with the presence of the boundary clouds. These things do create that differentiation. We create the differentiation and then each of these classes tells us something informative about the phenomenon role which we are interested in. 
 
-![18](Picturs/pic_18.PNG)
+![4](Picturs/pic_18.PNG)
 
 These forecasts are not perfect. 
 
@@ -212,13 +212,13 @@ We got the American prediction model and it will predict for us, relative humidi
 
 So, we recalibrate it to give us the real probability distribution. Rather than taking the forecasting literally true, we take it as a signal and recalibrate it.    
 
-![19](Picturs/pic_19.PNG)
+![5](Picturs/pic_19.PNG)
 
-![20](Picturs/pic_20.PNG)
+![6](Picturs/pic_20.PNG)
 
 The solid line shows the sequence of the decisions. In the first days, you are more conservative, and there are more days left. Then, you see there are a lot of flights left, and you start dropping the probabilities and having the flight on risky days. In the end, you have a budget left, and you start burning it. 
 
-![21](Picturs/pic_21.png)
+![7](Picturs/pic_21.png)
 
-![22](Picturs/pic_22.png)
+![8](Picturs/pic_22.png)
 

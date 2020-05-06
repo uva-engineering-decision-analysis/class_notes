@@ -193,7 +193,7 @@ Let $v(2,1)=E[U|a_{2}=a^{*}_{2}]
 =29+$max{p(s_{2}), E^{\pi}[p(s)]}$
 
 
-![15](Picturs/pic_15.png)
+![1](Picturs/pic_15.png)
 
 You will solve this through backward induction.
 

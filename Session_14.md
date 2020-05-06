@@ -5,27 +5,27 @@ In the example which was presented in the previous session, suppose we have hist
 Suppose we know the true average and standard deviation. Suppose we have 20 historical data points. 
 It is a limited amount of data.
 
-![49](Picturs/pic_49.PNG)
+![1](Picturs/pic_49.PNG)
 
-![50](Picturs/pic_50.PNG)
+![2](Picturs/pic_50.PNG)
 
 In the above graph, you might think that the estimated average is higher than the actual average.
 
-![51](Picturs/pic_51.PNG)
+![3](Picturs/pic_51.PNG)
 
 
 The estimated average and standard deviation are quite higher than the actual ones. 
 
-![52](Picturs/pic_52.PNG)
+![4](Picturs/pic_52.PNG)
 
 In this case, the decision-maker who relies on this model is overestimating the risk.
 
 Suppose you have a forecasting system,
 
-![53](Picturs/pic_53.PNG)
+![5](Picturs/pic_53.PNG)
 
 Instead of relying on historical data, suppose that we have a forecasting system. Also, suppose the system is biased and it tends to be low.
-![54](Picturs/pic_54.PNG)
+![6](Picturs/pic_54.PNG)
 
 It is a linear regression that looks at forecasts against the observations.
 
@@ -39,7 +39,7 @@ $x_{1},x_{2},...,x_{n}$     historic forecasts
 
 $y_{i}=\theta+\varepsilon_{i}$
 
-$\hat{\theta}=\frac{\sumy_{i}}{n}=\bar{y}$
+$\hat{\theta}=\frac{\sum y_{i}}{n}=\bar{y}$
 
 $\hat{\varepsilon_{i}}=y_{i}-\bar{y}$
 
@@ -76,17 +76,17 @@ Use OLS (or your preferred technique), to estimate parameters.
 
 You can use the maximum likelihood here, too. It will give you a biased estimator that has a smaller variance.
 
-estimate \hat{\beta_{0}},\hat{\beta_{1}}, \hat{\gamma^{2}}
+estimate $\hat{\beta_{0}},\hat{\beta_{1}}, \hat{\gamma^{2}}$
 
 Generate the predictive distribution of Y|X. 
 
 Suppose we make the best linear fit. Then, we have now condition information for the given y's and therefore with some estimate of distribution, you can map that distribution to the distribution of the losses.  The loss distribution will have a heavyweight on zero and then increasingly less and less weight on higher levels of loss. If there is a minimum threshold, all of the values before the threshold in the first graph (normal distribution) will map to a loss equal to zero, and above that they all map to higher and higher losses but with less and less probability. Here, we do not have any forecasting information. 
 
-![55](Picturs/pic_55.PNG)
+![7](Picturs/pic_55.PNG)
 
 But the idea here is instead of getting the forecast, you can have for some given x values, the distribution of the Y|x which is much sharper. Then, you can map that conditional distribution. The conditional distribution will have again heavyweight on zero but much sharper distribution, in comparison to the previous graph. 
 
-![56](Picturs/pic_56.PNG)
+![8](Picturs/pic_56.PNG)
 
 Then given the above distribution of loss, 
 
@@ -101,7 +101,7 @@ How much value does this create by refining the prediction system in this way? H
 Suppose we got the forecast, and when the forecast is high, you decide to buy the insurance. On the other hand, when the forecast is low, you decide not to buy the insurance. There is a critical boundary here. I know in advance, which x, I am going to map to which action. On the right part, the expected loss is higher than buying the insurance, and on the left part, the expected loss is lower than buying the insurance.
 
 
-![57](Picturs/pic_57.PNG)
+![9](Picturs/pic_57.PNG)
 
 
 To document how much value our method will create we can use the historic data. We can compare the action they actually did with how well we claim that could have done. That is one way to do that. 

@@ -68,11 +68,12 @@ This model asserts several substantive assumptions about the data generating pro
   
   * Temperature variations around the long-run average are assumed to be *identically distributed*. This assumption rules out the possibility that variance is, say, greater when temperatures are higher than when they are lower.
   
-![43](Picturs/pic_43.png)
+![1](Picturs/pic_43.png)
+
 In the above graph, this above assumption is not supportive. You are underestimating the risk of a very high temperature. Systematically, you are underestimating the probability of a very large loss. It will lead to the wrong recommendation.
   
 
-![44](Picturs/pic_44.png)
+![2](Picturs/pic_44.png)
 
 
 This graph shows that for each amount of the loss what is the probability of getting that amount of the damage of loss. It is the summary picture of tail risk. It is not the probability of each level; it is the probability of exceeding any given total loss level.
@@ -99,9 +100,11 @@ On the other hand, if your decision recommendations are not highly sensitive to 
 
 ## Simulation of the prediction process, no covariates
 
-![45](Picturs/pic_45.png)
 
-![46](Picturs/pic_46.png)
+![3](Picturs/pic_45.png)
+
+![4](Picturs/pic_46.png)
+
 
 $y_{i}=\theta+\varepsilon_{i}$
 
@@ -111,7 +114,7 @@ $\varepsilon_{i}=y_{i}-\bar{y}$
 
 Suppose that your errors are kind of like the following shape
 
-![47](Picturs/pic_47.png)
+![5](Picturs/pic_47.png)
 
 There is another variable that we did not consider it. There is a missing variable.
 
@@ -119,11 +122,11 @@ $y_{i}=\beta_{0}+\beta{1}x_{i}+\varepsilon_{i}$  Here, there might be multiple e
 
 What does the following graph show?
 
-![48](Picturs/pic_48.png)
+![6](Picturs/pic_48.png)
 
 There is a missing outlier. It has information and it is an unusual event. 
 
-You use OLS to estimate \hat{\theta} in order to minimize the amount of the error.
+You use OLS to estimate $\hat{\theta}$ in order to minimize the amount of the error.
 
 Why do we use the square of the errors? It emphasizes the big errors. Big errors refer to the big loss. 
 
@@ -137,7 +140,7 @@ The second option is less sensitive to big errors. It cares about the total amou
 
 
 
-The following equation shows a measurement for measuring the error, and $\alpha$ can take different values, and if the $\alpha$ is equal to $\infinity$, it means we care just about the biggest error. We want to minimize only the biggest error.
+The following equation shows a measurement for measuring the error, and $\alpha$ can take different values, and if the $\alpha$ is equal to $\infty$, it means we care just about the biggest error. We want to minimize only the biggest error.
 
 $(\sum|\varepsilon^{\alpha}_{i})^{\frac{1}{\alpha}}$          $L^{\alpha}$
 

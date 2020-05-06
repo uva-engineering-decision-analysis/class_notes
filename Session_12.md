@@ -27,7 +27,7 @@ $a_{1}$: not purchase insurance
 
 $a_{2}$: purchase insurance
 
-![40](Picturs/pic_40.png)
+![1](Picturs/pic_40.png)
 
 Historical data on $y=y_{1},y_{2},...,y_{n}$. This is the history of the temperature in this example.
 
@@ -47,47 +47,50 @@ Based on the loss function which action should be chosen?
 
 $\hat{L_{emp}}=\frac{\sum_{i=1}^{n} (a_{1},y_{i})}{n}$
 
+
+
 Define events:
 
-$E_{1}={y|y_{n+1}	\le y_{int}}$   $a^{*}=a_{1}$    
+$E_{1}=\{y|y_{n+1}	\le y_{int}\}$   $a^{*}=a_{1}$    
 
-$E_{2}={y|y_{n+1}\gey_{int}}$     $a^{*}=a_{2}$  
+$E_{2}=\{y|y_{n+1}\ge y_{int}\}$     $a^{*}=a_{2}$  
 
-Want $Pr{E_{1}}=Pr{y	\le y_{int}}=\frac{\frac{1}{n}}{\sum_{y	\le y_{int}(1)}=p_{1}$ Estimate of Pr($E_{1}$)
+Want $Pr\{E_{1}\}=Pr\{y \le y_{int}\}=\frac{1}{n}\sum_{y \le y_{int}} (1)$ Estimate of $Pr(E_{1})$
 
-If $\hat{L_{emp}} \ge c_{2}, then $a^{*}=a_{2}$
+If $\hat{L_{emp}} \ge c_{2}$, then $a^{*}=a_{2}$
 
 Need some model of the data generating process
 
-$y_{i}=y_{0}+	\varepsilon_{i}, 	\varepsilon_{i}\sim N(0,\sigma^{2}_{y})$
+$y_{i}=y_{0}+	\varepsilon_{i},\varepsilon_{i}\sim N(0,\sigma^{2}_{y})$
 
-![41](Picturs/pic_41.png)
+![2](Picturs/pic_41.png)
 
 Here, the mean and variance are unknown.  
 
-Equivalently $y_{i}\sim N(y_{i},\sigma^{2}_{y}})$
+Equivalently $y_{i} \sim N(y_{i},\sigma^{2}_{y})$
+
 
 We need to find the distribution of the losses over the different actions. To do that, we need the distribution of the $y$
 
 Want the probability forecast of $y_{n+1}$
 
-To get it, estimate the $y_{0},\sigma^{2}_{y}}$ from $y_{1},y_{2},...,y_{n}$
+To get it, estimate the $y_{0},\sigma^{2}_{y}$ from $y_{1},y_{2},...,y_{n}$
 
 There are multiple ways to do that.
 
 Standard approach: OLS
 
-mean: min_{\hat{y_{0}}}\sum(\hat{y_{0}}-y_{i})^{2}=\sum()\hat{varepsilon_{i}}^{2}
+mean: $min_{\hat{y_{0}}}\sum(\hat{y_{0}}-y_{i})^{2}=\sum(\hat{\varepsilon_{i}}^{2})$
 
 So, we will get the $y_{0},\sigma^{2}_{y}$
 
-![42](Picturs/pic_42.png)
+![3](Picturs/pic_42.png)
 
 This is the distribution y. This describes the probability forecast over the nest value of y. Using it, we can get the probability forecast for losses.
 
 Suppose, you plot your estimated errors $\hat{varepsilon_{i}}=y_{i}-\hat{y_{0}}$
 
-![43](Picturs/pic_43.png)
+![4](Picturs/pic_43.png)
 
 The variance of the error tends to be growing. It violates the assumption of the independent identically distribution. This is called the heteroskedasticity. 
 When you work with data, you need to look at your data. 

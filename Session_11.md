@@ -3,15 +3,15 @@
 
 Example: We have a population of fathers and their sons. Their occupation is divided into five categories. The numbers in the table show the joined probability distribution. Also, the sum of all numbers, in the table, equals to one. 
 
-![31](Picturs/pic_31.PNG)
+![1](Picturs/pic_31.PNG)
 
 Two variables are independent if knowing one of them does not give you information about the other one. Also, two variables are independent if the following relationship is true between them:
 
-$P(A\capB)=P(A)\timesP(B)$
+$P(A \cap B)=P(A) \times P(B)$
 
 What is the probability that the son is professional?
 
-$Pr(Y_{2}=Professional)=\sum Pr(Y_{2}=Professional,Y_{2}=i)=0.352	\neq0.164$
+$Pr(Y_{2}=Professional)=\sum Pr(Y_{2}=Professional,Y_{2}=i)=0.352 \neq 0.164$
 
 It is shown that the conditional probability is not equal to unconditional probability.
 
@@ -42,7 +42,7 @@ where $\binom{n}{k} = \frac{n!}{k!(n-k)!}$
 
 $l(y|\theta)$ called the *likelihood function*.
 
-![32](Picturs/pic_32.PNG)
+![2](Picturs/pic_32.PNG)
 
 The above left graph is the graph of the likelihood function or the histogram of the likelihood function for different values of data. If $\theta$ is equal to 0.05, there is a substantial probability of getting zero successful tasks out of 20 and if you get zero success out of 20 that just not tell you the expected value for the real $\theta$ is zero. 
 
@@ -85,7 +85,7 @@ $$\theta \sim \text{beta}(2,20)$$
 
 implies
 
-![33](Picturs/pic_33.PNG)
+![3](Picturs/pic_33.PNG)
 
 ### Bayes Theorem
 
@@ -107,14 +107,14 @@ More generally:
 
 If $\theta \sim \text{beta}(a,b)$ and $Y = y$, then $\theta | y \sim \text{beta}(a+y,b+20-y)$.
 
-![34](Picturs/pic_34.png)
+![4](Picturs/pic_34.png)
 
 The new expected value is being the weighted average of your prior expectation and the sample mean. If w is very small, then you are putting most of your weight on your sample data, otherwise you put most of the weight on the prior expectation.
 
 
 ### Sensitivity analysis
 
-![35](Picturs/pic_35.png)
+![5](Picturs/pic_35.png)
 
 The X-axis shows the w, and the Y-axis shows the prior expectation. Given the prior expectation is 0.5 and the number of the positive tests is equal to zero. If you have high strong prior beliefs, your posterior mean is going to be about 0.26. 
 If you have less strong prior beliefs, your posterior mean is going to be about 0.16. 
@@ -126,17 +126,17 @@ Ex: We have a sample of 342 diabetes patients, and for each of them we have an o
 
 
 
-![36](Picturs/pic_36.png)
+![6](Picturs/pic_36.png)
 
 Consider you find out the distribution of the $\theta$ given the sample expectation, now you want to figure out what is the likelihood of getting a different value for the next.
 
-![38](Picturs/pic_38.png)
+![7](Picturs/pic_38.png)
 
-![39](Picturs/pic_39.png)
+![8](Picturs/pic_39.png)
 
 In the above-left side graph, the predictions were plot against the observations. Here, if the model was perfect, every point will be exactly on the line. 
 
-![37](Picturs/pic_37.png)
+![9](Picturs/pic_37.png)
 
 To have a useful prediction, you should be cautious that it cannot depend on anything unobserved. You have to get rid of all of the unobserved parameters.
 

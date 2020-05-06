@@ -20,7 +20,7 @@ What really matters here is you are correctly specifying what is the thing that 
 
 Payoff: Depending on situation,
 
-might model as function of (a,x) or 4(a,\theta)$
+might model as function of $(a,x) or 4(a,\theta)$
 
 Suppose payoff depends on (a,x)
 
@@ -30,7 +30,7 @@ Before the value of x is known, model it as a random variable X
 
 Let p(x)=pr(X=x), Assuming X is discrete
 
-Then $E[u(a,x)]=-sum p(x)u(a,x)$
+Then $E[u(a,x)]=-\sum p(x)u(a,x)$
 
 If the goal is to max E[u(a,x)], then the optimal action is $a^{*}$ is the one that maximize E[u(a,x)]:
 
@@ -44,12 +44,16 @@ Think of each action as a lottery
 
 $a_{1} \longmapsto <u(a_{1},x_{1}),u(a_{1},x_{2}),...,u(a_{1},x_{N})>$
 
-$p(x_{1}),p(x_{2}),...,$p(x_{N})$
+$p(x_{1}),p(x_{2}),...,p(x_{N})$
 
-$a_{2} \longmapsto <>)>$
+$a_{2} \longmapsto <...>)>$
+
 .
+
 .
+
 .
+
 
 X is the temperature, 
 
@@ -61,18 +65,18 @@ If you have two identical jackets, wearing each of them is one action and their 
 
  If your goal is to avoid that outcome that has a cost, for each of the actions, we identify the worse possible outcome that is associated with that outcome. We do not care about the probabilities. 
  
- \underline{u}(a_{1})$\min_{x\in X} u(a_{1},x)$ 
+ $\underline{u}(a_{1})=\min_{x\in X} u(a_{1},x)$ 
  
 The above equation shows the minimum possible worse case pay off if we choose action one. we have the same relationships for other actions.
 
-\underline{u}(a_{2})$\min_{x\in X} u(a_{2},x)$ 
+$\underline{u}(a_{2})=\min_{x\in X} u(a_{2},x)$ 
 .
 .
 .
 
 In this problem we want to avoid worse outcomes. Therefore, choose $a^{*}$ as follows:
 
-$a^{*}= arg max_{i=1,2,...,M}\underline{u}(a_{i})$
+$a^{*}= arg max \underline{u}(a_{i})$
 
 To choose this way is called following a "Max-Min rule".
 
@@ -87,19 +91,27 @@ Assume that we have some opportunities to do some statistical sampling from some
 
 Suppose we do not know much about $\theta$, but we can collect data. 
 
-Ex: $x_{1},...,x_{n}\sim N(\mu,  \sigma})$ and it helps us to estimate $\theta$
+Ex: $x_{1},\ldots{},x_{n} \sim N(\mu,\sigma)$ and it helps us to estimate $\theta$
 
 
 First, collect data: $x_{1},...,x_{n}$
 
-Second, estimate $N(\mu,  \sigma})$
+Second, estimate $N(\mu, \sigma)$
 
-Third, choose optimal action given new information about $N(\mu,  \sigma})$
+Third, choose optimal action given new information about $N(\mu,  \sigma)$
 
 How to do the above procedure? 
-Frequentist: $\mu^{^}=\frac{\Sigma_{i=1}^{n}\lambda_{i}}{n}$
+Frequentist: $\hat{\mu}=\frac{\Sigma_{i=1}^{n}\lambda_{i}}{n}$
 
-Ex: You have a flight when you will leave your house? You will estimate the time it will take to arrive there. There is a cost to get the airport early and there is a cost to get there late. Why do not get the estimated value to get there at the right time? The payoff is not symmetric; if you get there a little bit early, there is a small cost. However, if you get there a little bit late, the cost will be huge. Therefore, considering the estimated $\mu$, and choosing the action that maximizes the payoff is not, in fact, the optimal decision-making procedure. What you need is a rigorous way of deciding how much error there is and then dealing with the payoff and the optimal action given this error. This is what statistical decision theory will do for us. In the airport example, you will not consider the estimated arrival time ($\mu$). In fact, you know there is an error and you will take into account that error.
+Ex: You have a flight when you will leave your house? You will estimate the time it will take to arrive there.
+ There is a cost to get the airport early and there is a cost to get there late. Why do not get the estimated value
+ to get there at the right time? The payoff is not symmetric; if you get there a little bit early, there is a small cost.
+ However, if you get there a little bit late, the cost will be huge. Therefore, considering the estimated $\mu$,
+ and choosing the action that maximizes the payoff is not, in fact, the optimal decision-making procedure.
+ What you need is a rigorous way of deciding how much error there is and then dealing with the payoff and the
+ optimal action given this error. This is what statistical decision theory will do for us. In the airport example,
+ you will not consider the estimated arrival time ($\mu$). In fact, you know there is an error and you will take into
+ account that error.
 
 
 

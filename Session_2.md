@@ -8,7 +8,7 @@ Example: X={Infection is bacterial, infection is viral}={0,1}
 
 $\theta$: Parameters, unobserved. It describes our knowledge or beliefs about the probabilities of different x.
 
-$\theta= prob{X=1} $
+$\theta= prob\{X=1\}$
 
 Example: $\theta=[0,1]$
 
@@ -21,7 +21,7 @@ $\Theta$: Parameter space
 
 ## Example:
 
-x \in X={0,1} corresponding to whether or not the patient has or does not have a bacterial infection as opposed to viral.
+ $x \in X=\{0,1\}$ corresponding to whether or not the patient has or does not have a bacterial infection as opposed to viral.
 
  $\theta=[0,1]$  represents prob{x=1}
  
@@ -53,18 +53,18 @@ However, here we assumed that the test is perfect and the result is consistent.
 After coming out with the result, there is still a decision which we have to make. Here, we make choices condition on the outcomes. You may notice that if the test is imperfect, we will have to have another chance node after the decision nodes to represent the actual realization of the actual information. Here, it is not a case and the test is perfect.
 
 
-![5](Picturs/pic_5.png)
+![2](Picturs/pic_5.png)
 
 
 The optimal actions:
 
-If x=1 and $ a^{*}=argmax{u(a/x=1)}$
+If x=1 and $a^{*}=argmax{u(a|x=1)}$
 
-optimal action: $a^{*}=Y   since  $u(a=Y/x=1)=2$
+optimal action: $a^{*}=Y$ since $u(a=Y|x=1)=2$
 
-If x=0 and $ a^{*}=argmax{u(a/x=0)}$
+If x=0 and $a^{*}=argmax{u(a|x=0)}$
 
-optimal action: $a^{*}=N   since  $u(a=Y/x=0)=0$
+optimal action: $a^{*}=N$   since  $u(a=Y|x=0)=0$
 
 
 So, the question is should we buy the test or not?
@@ -74,17 +74,17 @@ In the decision tree, if the result of the test is positive, the payoff will be 
 
 Now, suppose the cost of the test is equal to C. The question is whether or not we should buy the test. The amounts of payoffs are shown in the following figure.
 
-![6](Picturs/pic_6.png)
+![3](Picturs/pic_6.png)
 
 ** If we do not buy the test. **
 
 If $\theta     \geq 0.6$
 
-$a^{*}=Y   since  $E[u(a^{*})]=5 \theta -3$
+$a^{*}=Y$   since  $E[u(a^{*})]=5 \theta -3$
 
 If $\theta < 0.6$
 
-$a^{*}=N   since  $E[u(a^{*})]=0$
+$a^{*}=N$  since  $E[u(a^{*})]=0$
 
 ** If we do run the test: **
 
@@ -92,7 +92,7 @@ $E[u(a^{*})]=2 \theta -C$
 
 Should we buy the test? it depends on C and $\theta$
 
-** $Test \lsim Do not     \iff$ **
+** $Test \lesssim Do not\iff$ **
 
 1- In the case $\theta     \geq 0.6$,
 
@@ -102,11 +102,10 @@ Should we buy the test? it depends on C and $\theta$
 
 $2 \theta -C \geq 0$
 
+The difference between the two above cases is called the Expected value Information.
 
-ٌThe difference between the two above cases is called the Expected value Information.
 
-
-$ \theta -C \geq 0.6$ \Rightarrow V=2 \theta - (5 \theta -3)$ 
+$\theta -C \geq 0.6 \Rightarrow V=2 \theta - (5 \theta -3)$ 
 
 $\theta < 0.6 \Rightarrow V=2 \theta$
 

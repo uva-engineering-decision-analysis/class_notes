@@ -6,7 +6,7 @@ Sometimes the actual decision problem was not very well articulated. In the deci
 
 ## Formulization for statistical decision model:
 
-Action set $\Rightarrow A={a_{0},a_{1},...,a_{m}} or A\subseteqR^{M}$
+Action set $\Rightarrow A={a_{0},a_{1},...,a_{m}} or A\subseteq R^{M}$
 
 Example: you have a fixed budget and you got two assets including safe and risky assets. You are going to decide what proportion of your portfolio to put at the risky asset and how much put at the safe asset.
 
@@ -20,19 +20,19 @@ Ex 2:Portfolio allocation, 3 assets including cash, bonds, and stacks
 
 Let $a_{i}$ fraction of portfolio allocated to asset i,i={1,2,3}
 
-We must have 0 \leq a_{i} \leq 1, \sum_{i=1}^{3} a_{i}=1$
+We must have $0 \leq a_{i} \leq 1, \sum_{i=1}^{3} a_{i}=1$
 
-$A={<a_{1},a_{2}, a_{3}>| 0 \leq a_{i} \leq 1 for i=1,2,3, \sum_{i=1}^{3} a_{i}=1}$ 
+$A=\{<a_{1},a_{2}, a_{3}>| 0 \leq a_{i} \leq 1 \;for\; i=1,2,3, \sum_{i=1}^{3} a_{i}=1\}$ 
 
 $\equiv \bigtriangleup^{2}$   The unit simplex in $R^{3}$
 
-![7](Picturs/pic_7.png)
+![1](Picturs/pic_7.png)
 
 There are a set of points, each of them is non-negative and their summation is equal to the one.
 
 The following is the two-dimensional object in the three-dimensional space
 
-![8](Picturs/pic_8.png)
+![2](Picturs/pic_8.png)
 
 Problems where you got to allocate some scarce resource according to some kind of finding constraints, the action set often ends up looking something like the above figures.
 
@@ -61,9 +61,9 @@ We write $X     \sim \beta(\theta)$
 
 X is distributed as a Bernoulli the parameter $\theta$
 
-$Pr{X=1}=\theta$
+$Pr\{X=1\}=\theta$
 
-$Pr{X=0}=1-\theta$
+$Pr\{X=0\}=1-\theta$
 
 Ex: X is next Thursday temperature at Charlottesville airport
 
@@ -78,7 +78,7 @@ Ex: X is a random variable
 
 Let $\theta_{i}=Pr{X=i}, i=1,2,..,n$
 
-Then $\Theta=<\theta_{1},\theta_{1},...,\theta_{N}>
+Then $\Theta=<\theta_{1},\theta_{1},...,\theta_{N}>$
 
 defines a probability distribution on X
 
@@ -94,7 +94,7 @@ What is corresponding to the bad or no information? Having equal probabilities, 
 If N=2,
 
 
-![9](Picturs/pic_9.png)
+![3](Picturs/pic_9.png)
 
 
 
